@@ -41,7 +41,7 @@ def header(current):
     <div class="brand-header">
       <a class="brand" href="index.html" aria-label="Winstar Security Solutions home"><img src="winstar-logo.svg" width="320" height="180" alt="Winstar Security"></a>
       <div class="header-contact">
-        
+
         <div class="hotline-numbers"><a href="tel:+254722535066">0722 535066</a><span aria-hidden="true"> / </span><a href="tel:+254734535066">0734 535066</a></div>
         <a class="header-email" href="mailto:info@winstarsecurity.co.ke">info@winstarsecurity.co.ke</a>
       </div>

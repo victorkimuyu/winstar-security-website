@@ -1,0 +1,22 @@
+# Local dependencies and caches
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Generated previews and extracted page images
+tmp/
+review/policy-pages/
+review/profile-pages/
+review/notebook-pages/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

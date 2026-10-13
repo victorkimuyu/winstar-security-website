@@ -27,9 +27,11 @@ Use 2001 as the establishment/professional operations date. Preferred wording: "
 
 ## Page map and navigation
 
-Main navigation: **HOME | SERVICES | SECTORS | COMPANY | CONTACT US**.
+Main navigation: **HOME | OUR SOLUTIONS | WHO WE SERVE | COMPANY | CONTACT US**.
 
 Place **REQUEST FOR QUOTE** at the far right as the prominent CTA.
+
+Agreed two-tier header: upper white row with logo, tagline "For all your corporate & private security needs" beside it, and hotlines `0722 535066 / 0734 535066` plus `info@winstarsecurity.co.ke` at the far right. Telephone and email links are clickable. Navigation sits in a separate row below. On mobile, contacts wrap beneath the logo/tagline above the compact menu row.
 
 - Services: mega menu.
 - Sectors: mega menu, retained as a top-level item.
@@ -53,10 +55,10 @@ Company navigation should include About Winstar, Social Responsibility and Polic
 Manned Guarding; CCTV Security; Access Control (including bollards, turnstiles, barriers and card/biometric access); Alarm Monitoring & Response; Electric Fencing; Canine Security; Event Security; Security Escort (VIP and cargo); Aviation Security; Facility Management.
 
 Agreed Services mega menu:
-- **Manned Security:** Manned Guarding; Canine Security; Event Security; VIP & Cargo Escorts.
+- **Manned Security:** Manned Guarding; Canine Security; Event Security; VIP & Cargo Escorts; Aviation Security.
 - **Electronic Security:** CCTV Cameras & Surveillance; Biometric & Card-Based Access; Security Alarm Systems (installation, monitoring and response).
-- **Access Control:** one page covering turnstiles, bollards, vehicle barriers and related equipment.
-- **Featured services beneath the columns:** Electric Fencing and Aviation Security, each with its own page. Aviation is not grouped under Manned Security.
+- **Access Control:** one page covering turnstiles, bollards, vehicle barriers and related equipment; Electric Fencing as a separate page linked in this column.
+- No featured strip beneath the columns. Aviation Security and Electric Fencing retain their individual pages.
 
 Control-room support is explained within relevant services and capacity content. No separate category pages are needed initially. Facility Management remains conditional and is not scaffolded yet.
 
@@ -162,6 +164,16 @@ Target: modern, corporate, clean and reassuring.
 
 Existing material suggests navy, red, blue/light blue and white. Exact colour specifications, typography, spacing, image treatment and responsive layouts remain to be determined from brand assets and design work.
 
+Supplied palette (`sources/brand-colours.jpg`): slate `#39375b`, navy `#191c66`, blue `#1780b8`, light blue `#95d6e2`, red `#ec1e24`. Original `winstar-logo.svg` and `favicon.svg` are used without recolouring. Navigation uses a white surface, navy text, blue menu accents and a red quote CTA.
+
+Shared navigation is implemented across all 26 pages. Our Solutions and Who we serve use full-width expandable mega menus at every breakpoint. Company is a compact dropdown at 640px and above, full-width below 640px. All panels use an almost-white `#fafafa` background without shadows or thick blue top borders. The desktop navigation remains white with a square red quote CTA; the red-bar experiment was reverted.
+
+On screens up to 1050px, an icon-only, borderless hamburger sits beside the logo at the right. Phone numbers and email are shown within the expanded menu rather than the brand row. Menu panels use a 160ms fade with 6px downward movement, triggered synchronously when opened and disabled for reduced motion. Menus support keyboard activation, Escape dismissal, and outside-click dismissal.
+
+Solution columns have rounded image placeholders (120px high, maximum width 320px). Sectors have 52px square icon placeholders beside their title and description. Hover titles and arrow icons use Winstar red; sector descriptions retain their colour. Service text indents on hover; sector text remains stationary with an 8px title-to-arrow gap. Panel introductory headings use 18px semibold, Explore links 13px bold, and service links 13px with compact row spacing.
+
+Shared assets are `static/navigation.css` and `static/navigation.js`; `src/apply_navigation.py` reapplies markup consistently. The quote CTA currently leads to Contact Us with `?enquiry=quote`; form handling is still pending. Nunito Sans is the current font throughout; the Integral CF phone-number trial was removed.
+
 Prioritise real Winstar people and operations. Use clear hierarchy, readable text and restrained brand motifs. Ensure responsive navigation, keyboard access and accessible carousel behaviour.
 
 ## Delivery sequence
@@ -174,3 +186,15 @@ Prioritise real Winstar people and operations. Use clear hierarchy, readable tex
 6. Verify content, responsive behaviour, accessibility and enquiry functionality before launch.
 
 Detailed page outlines, content inventory and design decisions will be added progressively. Use `checklist.md` to track completed work rather than marking discussion as implementation.
+
+### Typography trial
+
+Nunito Sans from Google Fonts is the main font under evaluation. Weights: 400 body, 600 supporting emphasis, 700/800 navigation and headings. No separate title font selected. Arial is the fallback.
+
+Navigation labels updated: Services is displayed as Our Solutions; Sectors as Who we serve. Existing page paths and groupings are unchanged.
+
+Header refinement: omit tagline from the header, use a smaller logo (110px desktop, 95px mobile) and 20px top/bottom padding. Hotlines and email remain. The brand tagline itself is unchanged.
+
+## Current milestone and next step
+
+Header and navigation are accepted as the working baseline. Refine them as needed during the rest of the build. The shared footer is the next implementation item: agree its content and layout, build it responsively and apply it across all pages before moving on to the homepage body.

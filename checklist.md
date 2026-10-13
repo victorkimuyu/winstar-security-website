@@ -14,19 +14,31 @@ Living implementation checklist. Strategy and agreed content requirements are in
 ## Shared site foundation
 
 - [x] Scaffold agreed HTML pages (26 structural shells; see blueprint for filenames).
-- [ ] Set up shared styles and consistent layout.
-- [ ] Build desktop navigation.
-- [ ] Build Services mega menu.
-- [ ] Build Sectors mega menu.
-- [ ] Build Company dropdown.
-- [ ] Build mobile navigation and keyboard interactions.
-- [ ] Place Request for Quote CTA at far right on desktop.
+- [x] Set up shared header/navigation styles and consistent layout.
+- [x] Build desktop navigation.
+- [x] Build Services mega menu.
+- [x] Build Sectors mega menu.
+- [x] Build Company dropdown.
+- [x] Build mobile navigation and keyboard interactions.
+- [x] Place Request for Quote CTA at far right on desktop.
 - [ ] Build shared footer, including Data Protection Policy, Privacy Notice and Terms of Use links.
-- [ ] Apply shared navigation and footer to all pages.
+- [x] Apply shared header and navigation to all 26 pages.
+- [ ] Apply shared footer to all pages.
+
+## Next: Shared Footer
+
+Header and navigation are accepted as the current baseline; continue refinements as page content develops.
+
+- [ ] Agree footer content, hierarchy and layout.
+- [ ] Build responsive footer and shared styling.
+- [ ] Include Data Protection Policy, Privacy Notice and Terms of Use links.
+- [ ] Include approved company, contact and navigation content.
+- [ ] Apply footer across all 26 pages.
+- [ ] Verify footer links and responsive presentation.
 
 ## Home Page
 
-- [ ] Navigation.
+- [x] Navigation.
 - [ ] Three-slide hero: Main Introduction, Capacity, Differentiator.
 - [ ] Services overview: short paragraph, suitable image and Services CTA.
 - [ ] Experience & Sector Expertise, with Sectors CTA.

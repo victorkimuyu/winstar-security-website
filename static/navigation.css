@@ -1,0 +1,116 @@
+:root{--navy:#191c66;--slate:#39375b;--blue:#1780b8;--sky:#95d6e2;--red:#ec1e24;--ink:#24263b;--line:#e4e7ed}
+/* Leading arrows occupy no space until hover; labels start aligned with headings. */
+.menu-group a.service-link,.featured-services .feature-link strong,.sector-grid .sector-link strong{display:flex;align-items:center;gap:0;position:relative}
+.hover-arrow{display:block;flex:0 0 18px;width:18px;height:18px;opacity:0;transform:translateX(-4px);transition:opacity 180ms ease,transform 180ms ease;pointer-events:none}
+.service-link>.hover-arrow,.feature-link strong>.hover-arrow{position:absolute;left:0}
+.sector-grid .sector-link strong{gap:8px}
+.sector-link strong>.hover-arrow{position:static;margin:0}
+.service-link>span,.feature-link strong>span{transition:transform 200ms ease}
+.service-link:hover>span,.feature-link:hover strong>span{transform:translateX(-4px)}
+.service-link:hover .hover-arrow,.feature-link:hover .hover-arrow,.sector-link:hover .hover-arrow{opacity:1;transform:translateX(0)}
+.feature-link strong>span,.sector-link strong>span{font-size:inherit;color:inherit;line-height:inherit}
+@media(prefers-reduced-motion:reduce){.hover-arrow,.service-link>span,.feature-link strong>span,.sector-link strong>span{transition:none;transform:none}}
+.brand-header{max-width:1440px;margin:auto;padding:22px 5%;display:flex;align-items:center;gap:30px}.tagline{max-width:290px;margin:0;padding-left:28px;border-left:1px solid var(--line);font-size:16px;line-height:1.5;color:var(--slate)}.header-contact{margin-left:auto;text-align:right}.hotline-label{font-size:10px;letter-spacing:1.6px;color:var(--blue);font-weight:700;margin:0 0 6px}.hotline-numbers{font-size:16px;line-height:1.5;font-weight:700;color:var(--navy);white-space:nowrap}.hotline-numbers a,.header-email{text-decoration:none}.hotline-numbers a:hover,.header-email:hover{color:var(--blue)}.header-email{display:inline-block;font-size:13px;margin-top:5px;color:var(--slate)}.navigation-row{border-top:1px solid var(--line)}
+*{box-sizing:border-box}body{margin:0;font-family:Nunito Sans,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}a{color:inherit}.skip-link{position:absolute;left:16px;top:-60px;z-index:100;padding:12px;background:var(--navy);color:white}.skip-link:focus{top:12px}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:5px}.site-header{border-bottom:1px solid var(--line);position:relative;z-index:20;background:white}.nav-shell{max-width:1440px;margin:auto;padding:18px 5%;display:flex;align-items:center;gap:36px;position:relative}.brand{flex-shrink:0;display:block}.brand img{display:block;width:142px;height:auto}.site-nav{margin-left:auto;display:flex;align-items:center;gap:28px}.nav-link,.menu summary{font-size:12px;font-weight:700;letter-spacing:1px;text-decoration:none;white-space:nowrap}.nav-link{padding:17px 0}.nav-link[aria-current=page],.menu.is-current summary{color:var(--blue)}.menu summary{cursor:pointer;list-style:none;padding:17px 0;display:flex;align-items:center;gap:9px}.menu summary::-webkit-details-marker{display:none}.chevron{width:6px;height:6px;border-right:1.5px solid;border-bottom:1.5px solid;transform:rotate(45deg);margin-top:-3px}.menu[open] .chevron{transform:rotate(225deg);margin-top:3px}.menu[open] summary{color:var(--blue)}.quote-button{background:var(--red);color:white;text-decoration:none;padding:16px 20px;font-size:12px;font-weight:700;letter-spacing:.6px;white-space:nowrap;border-radius:3px}.quote-button:hover{background:#c8151b}.menu-panel{position:absolute;top:100%;left:5%;right:5%;background:white;border:1px solid var(--line);border-top:3px solid var(--blue);box-shadow:0 16px 35px #191c6614;padding:30px 36px}.panel-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:24px}.panel-heading span{font-size:13px;color:var(--slate)}.overview-link{font-size:13px;font-weight:700;color:var(--blue);text-decoration:none}.menu-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}.menu-group h2{font-size:16px;color:var(--navy);margin:0 0 16px}.menu-group ul,.company-panel ul{list-style:none;margin:0;padding:0}.menu-group li+li{margin-top:2px}.menu-group a,.company-panel a{display:block;text-decoration:none;font-size:13px;line-height:1.5;padding:5px 0}.menu-group a:hover,.company-panel a:hover{color:var(--blue)}.menu-panel a[aria-current=page]{color:var(--blue);font-weight:bold}.featured-services{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}.feature-link{background:#f3f7fa;border-left:3px solid var(--blue);padding:17px 20px;text-decoration:none}.feature-link strong{display:block;color:var(--navy);font-size:15px;margin-bottom:7px}.feature-link span{font-size:13px;line-height:1.5;color:var(--slate)}.feature-link:hover{background:#e9f3f6}.sector-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 30px}.sector-link{padding:12px 0;text-decoration:none}.sector-link strong{display:block;font-size:14px;color:var(--navy);margin-bottom:7px}.sector-link span{font-size:13px;line-height:1.5;color:var(--slate)}.sector-link:hover strong{color:var(--blue)}.company-panel{left:auto;right:20%;width:270px;padding:20px 26px}.mobile-toggle{display:none}main{max-width:1280px;margin:60px auto;padding:0 5%}main h1{color:var(--navy);font-weight:500}button{font:inherit}
+@media(min-width:1051px){.menu summary:hover,.nav-link:hover{color:var(--blue)}}
+@media(max-width:1050px){.nav-shell{padding:14px 5%;flex-wrap:wrap;gap:14px}.brand img{width:118px}.mobile-toggle{display:flex;align-items:center;gap:10px;margin-left:auto;background:white;border:1px solid var(--line);padding:11px 14px;color:var(--navy);border-radius:3px;font-size:14px}.site-nav{width:100%;margin:0;display:flex;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid var(--line)}.site-nav[hidden]{display:none}.nav-link,.menu summary{padding:18px 0}.menu summary{justify-content:space-between}.menu-panel{position:static;width:auto;padding:20px;box-shadow:none;border-top:2px solid var(--blue);margin-bottom:12px}.menu-columns,.sector-grid{grid-template-columns:1fr 1fr;gap:24px}.quote-button{text-align:center;margin:12px 0}.company-panel{width:auto}.panel-heading{gap:15px;align-items:flex-start}.featured-services{grid-template-columns:1fr}.menu-group h2{font-size:16px}}
+@media(max-width:600px){.menu-columns,.sector-grid{grid-template-columns:1fr}.menu-panel{padding:20px 16px}.panel-heading{flex-direction:column;gap:12px}.sector-grid{gap:4px}.menu-columns{gap:20px}}
+/* Two-tier header layout */
+.nav-shell{padding-top:0;padding-bottom:0}.site-nav{width:100%;margin-left:0;gap:36px}.site-nav>.quote-button{margin-left:auto}.nav-link,.menu summary{padding-top:23px;padding-bottom:23px}
+@media(max-width:1050px){.brand-header{gap:20px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}.tagline{font-size:15px;max-width:260px;padding-left:20px}.header-contact{margin-left:auto}.nav-shell{padding-top:10px;padding-bottom:10px}.site-nav{gap:0}.site-nav>.quote-button{margin-left:0}.mobile-toggle{margin-left:0}.nav-link,.menu summary{padding-top:18px;padding-bottom:18px}}
+@media(max-width:700px){.brand-header{gap:16px}.brand-header .brand img{width:105px}.tagline{flex:1;max-width:none;font-size:14px;padding-left:16px}.header-contact{width:100%;margin:0;padding-top:14px;border-top:1px solid var(--line);text-align:left}.hotline-numbers{font-size:16px}.hotline-label{margin-bottom:3px}.header-email{margin-top:4px}}
+
+/* Services: preserve initial title alignment; reveal leading arrow and indent the label on hover. */
+.menu-group a.service-link,.featured-services .feature-link strong{position:relative;gap:0}
+.service-link>.hover-arrow,.feature-link strong>.hover-arrow{position:absolute;left:0}
+.service-link>span,.feature-link strong>span{transition:transform 200ms ease}
+.service-link:hover>span,.feature-link:hover strong>span{transform:translateX(22px)}
+@media(prefers-reduced-motion:reduce){.service-link>span,.feature-link strong>span{transition:none}}
+
+/* Quieter service-arrow motion; sector animation stays unchanged. */
+.service-link>.hover-arrow,.feature-link strong>.hover-arrow{transform:translateX(-2px);transition:opacity 200ms ease,transform 200ms ease}
+.service-link:hover>.hover-arrow,.feature-link:hover strong>.hover-arrow{transform:translateX(0)}
+@media(prefers-reduced-motion:reduce){.service-link>.hover-arrow,.feature-link strong>.hover-arrow{transition:none;transform:none}}
+
+/* Full-width desktop mega menus with a soft vertical gradient. */
+@media(min-width:1051px){
+.nav-shell{position:static}
+.navigation-row{position:relative}
+.menu-panel:not(.company-panel){left:0;right:0;width:100%;padding:30px max(5vw,calc((100vw - 1296px)/2));background:linear-gradient(to bottom,#fff 0%,#f1f2f4 100%);border-left:0;border-right:0}
+}
+@media(max-width:1050px){.menu-panel:not(.company-panel){background:linear-gradient(to bottom,#fff 0%,#f1f2f4 100%)}}
+
+.menu-panel:not(.company-panel){box-shadow:none}
+
+/* Winstar red for navigation hover text. */
+.site-nav .nav-link:hover,.site-nav .menu summary:hover,.site-nav .menu-panel a:hover,.site-nav .sector-link:hover strong,.site-nav .feature-link:hover strong,.site-nav .feature-link:hover>span{color:var(--red)}
+
+/* Menu reveal is restarted by navigation.js on every open. */
+
+/* Compact header and main-navigation spacing across breakpoints. */
+.brand-header{padding-top:14px;padding-bottom:14px}
+.site-nav>.nav-link,.site-nav>.menu>summary{padding:16px 0}
+
+.menu-panel:not(.company-panel){border-top:0}
+
+.quote-button{border-radius:0}
+
+/* Anchor Company to its own menu item, keeping mega menus full width. */
+@media(min-width:1051px){.site-nav>.menu:has(>.company-panel){position:relative}.site-nav .company-panel{left:0;right:auto;top:100%}}
+
+.company-panel{border-top:0}
+
+/* Revised brand header: compact logo without tagline. */
+.brand-header{padding-top:20px;padding-bottom:20px}
+.brand-header .brand img{width:110px}
+@media(max-width:700px){.brand-header .brand img{width:95px}}
+
+.solution-image-placeholder{height:120px;width:100%;max-width:320px;border-radius:8px;overflow:hidden;background:#e4e7ed;margin-bottom:20px}.menu-group{min-width:0}
+/* Sector icons sit beside both title and description. */
+.sector-link{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;align-items:center}
+.sector-icon-placeholder{display:block;width:52px;aspect-ratio:1;background:#e4e7ed}
+.sector-copy{min-width:0}
+
+.panel-heading{font-size:18px;font-weight:600}
+.panel-heading span{font-size:inherit;font-weight:inherit}
+.panel-heading .overview-link{font-size:13px;font-weight:700}
+
+/* Edge-to-edge mega menus within the stacked mobile/tablet navigation. */
+@media(max-width:1050px){
+.site-nav .menu-panel:not(.company-panel){margin-left:calc(-100vw * .05);margin-right:calc(-100vw * .05);width:100vw;max-width:none;border-left:0;border-right:0;padding-left:5vw;padding-right:5vw}
+}
+
+/* Company panel matches the edge-to-edge menu treatment. */
+.site-nav .company-panel{max-width:none;box-shadow:none;border-left:0;border-right:0;background:linear-gradient(to bottom,#fff 0%,#f1f2f4 100%)}
+@media(min-width:1051px){.site-nav>.menu:has(>.company-panel){position:static}.site-nav .company-panel{left:0;right:0;width:100%;padding:30px max(5vw,calc((100vw - 1296px)/2))}}
+@media(max-width:1050px){.site-nav .company-panel{margin-left:-5vw;margin-right:-5vw;width:100vw;padding-left:5vw;padding-right:5vw}}
+/* Phone contacts move into the expanded navigation on small screens. */
+.mobile-menu-contact{display:none}
+@media(max-width:1050px){
+.brand-header .hotline-numbers{display:none}
+.nav-shell>.mobile-toggle{margin-left:auto;justify-content:center;width:44px;height:44px;padding:0;font-size:24px}
+.mobile-menu-contact{display:flex;flex-wrap:wrap;gap:12px 24px;border-top:1px solid var(--line);padding:18px 0;color:var(--navy);font-size:16px;font-weight:700}
+.mobile-menu-contact a{text-decoration:none}
+.mobile-menu-contact a:hover{color:var(--red)}
+}
+/* Compact brand row: logo left, hamburger right; contacts inside the menu. */
+@media(max-width:1050px){
+.brand-header .header-contact{display:none}
+.brand-header{flex-wrap:nowrap;justify-content:space-between}
+.brand-header>.mobile-toggle{margin-left:auto;justify-content:center;width:44px;height:44px;padding:0;font-size:24px}
+.navigation-row .nav-shell{padding-top:0;padding-bottom:0}
+.site-nav{border-top:0}
+.mobile-menu-email{flex-basis:100%;font-size:13px;font-weight:400;overflow-wrap:anywhere}
+}
+
+.mobile-toggle{border:0}
+
+/* Company is compact above sm (640px), full-width on small screens only. */
+@media(min-width:640px){
+.site-nav>.menu:has(>.company-panel){position:relative}
+.site-nav .company-panel{position:absolute;top:100%;left:0;right:auto;width:270px;max-width:calc(100vw - 32px);margin:0;padding:20px 26px;border:1px solid var(--line);border-top:0}
+}
+@media(max-width:639px){.site-nav .company-panel{position:static;width:100vw;margin-left:-5vw;margin-right:-5vw;padding-left:5vw;padding-right:5vw}}
+
+/* Uniform menu-panel background across all breakpoints. */
+.site-nav .menu-panel{background:#fafafa}

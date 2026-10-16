@@ -38,16 +38,10 @@ def header(current):
     sector_links = ''.join(f'<a class="sector-link" href="{file}"'+(' aria-current="page"' if file==current else '')+f'><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>{escape(title)}</span>{arrow()}</strong><span>{escape(description)}</span></div></a>' for file,title,description in sectors)
     company_links = ''.join('<li>'+link(file,label,current)+'</li>' for file,label in company)
     return f'''  <header class="site-header">
-    <div class="brand-header">
-      <a class="brand" href="index.html" aria-label="Winstar Security Solutions home"><img src="winstar-logo.svg" width="320" height="180" alt="Winstar Security"></a>
-      <div class="header-contact">
 
-        <div class="hotline-numbers"><a href="tel:+254722535066">0722 535066</a><span aria-hidden="true"> / </span><a href="tel:+254734535066">0734 535066</a></div>
-        <a class="header-email" href="mailto:info@winstarsecurity.co.ke">info@winstarsecurity.co.ke</a>
-      </div>
-      <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
-    </div>
     <div class="navigation-row"><div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Winstar Security Solutions home"><img src="winstar-logo.svg" width="320" height="180" alt="Winstar Security"></a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
         {link('index.html','HOME',current,'nav-link')}
         <details class="menu{' is-current' if current in service_files else ''}">
@@ -70,11 +64,7 @@ def header(current):
         </details>
         {link('contact_us.html','CONTACT US',current,'nav-link')}
         <a class="quote-button" href="contact_us.html?enquiry=quote">REQUEST FOR QUOTE</a>
-        <div class="mobile-menu-contact" aria-label="Contact details">
-          <a href="tel:+254722535066">0722 535066</a>
-          <a href="tel:+254734535066">0734 535066</a>
-          <a class="mobile-menu-email" href="mailto:info@winstarsecurity.co.ke">info@winstarsecurity.co.ke</a>
-        </div>
+
       </nav>
     </div></div>
   </header>'''
@@ -86,5 +76,7 @@ for filename in PAGES:
     text = text.replace('<a href="#main-content">', '<a class="skip-link" href="#main-content">')
     if 'static/navigation.css' not in text:
         text = text.replace('</head>', '  <link rel="icon" href="favicon.svg" type="image/svg+xml">\n  <link rel="stylesheet" href="static/navigation.css">\n  <script src="static/navigation.js" defer></script>\n</head>')
+    if 'static/typography.css' not in text:
+        text = text.replace('</head>', '  <link rel="stylesheet" href="static/typography.css">\n</head>')
     path.write_text(text, encoding='utf-8')
 print(f'Applied shared navigation to {len(PAGES)} pages.')

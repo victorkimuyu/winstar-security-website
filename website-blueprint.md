@@ -90,7 +90,7 @@ Service pages explain solutions and delivery. Sector pages explain the environme
 
 1. **Navigation:** shared site navigation with Services and Sectors mega menus, Company dropdown and far-right Request for Quote CTA.
 2. **Three-slide jumbotron/hero:** Main Introduction; Capacity; Differentiator.
-3. **Services overview:** a short overview paragraph supported by a suitable image, with a CTA to the Services page. Do not use a full service list or service-card catalogue here.
+3. **Services overview:** a large heading on the left with a short overview paragraph and Services CTA on the right; no image for now. Do not use a full service list or service-card catalogue here.
 4. **Experience & Sector Expertise:** experience since 2001, breadth of sector work and relevance to different customer environments, with a CTA to Sectors. This is the agreed replacement for "Experience & Service Diversity."
 5. **Client logos slider/marquee:** approved existing-client logos.
 6. **Footer:** content and layout to be determined; include Data Protection Policy, Privacy Notice and Terms of Use links.
@@ -98,6 +98,8 @@ Service pages explain solutions and delivery. Sector pages explain the environme
 The section order above follows the agreed broad outline. Detailed copy, imagery and layout remain to be developed.
 
 ### Hero slide purposes
+
+Homepage hero implemented with the agreed first title "For all your corporate & Private Security needs" and a Services CTA. Slide 2 links to Sectors; slide 3 links to About Winstar. Local Unsplash images are temporary illustrative placeholders (sources recorded in `static/images/slider/SOURCES.md`), not evidence of Winstar assignments. Controls include previous/next, slide selectors and pause/play. Automatic rotation uses seven-second intervals, pauses on hover/focus and respects reduced-motion preferences. Shared assets: `static/home.css` and `static/home.js`; markup helper: `src/apply_home_hero.py`. Visual review and final copy/image approval remain pending.
 
 - **Main Introduction:** establish who Winstar is and whom it protects.
 - **Capacity:** show the people, management, operational systems and resources supporting delivery.
@@ -198,3 +200,38 @@ Header refinement: omit tagline from the header, use a smaller logo (110px deskt
 ## Current milestone and next step
 
 Header and navigation are accepted as the working baseline. Refine them as needed during the rest of the build. The shared footer is the next implementation item: agree its content and layout, build it responsively and apply it across all pages before moving on to the homepage body.
+
+Shared footer now implemented across all 26 pages: navy background, white logo copy (`static/images/winstar-logo-white.svg`), Winstar introduction and tagline, selected solution links, company links, phone/email contacts and the supplied Mombasa/Nairobi office details. Lower strip contains copyright and the three footer policy links. Responsive layout moves from four columns to two, with introduction and contacts spanning the width on small screens. Original logo remains unchanged. Styles: `static/footer.css`; shared markup application: `src/apply_footer.py`. Browser visual review and final content approval remain pending. Next substantive page work is the homepage body.
+
+Homepage refinement: sector introduction is centered on a solid almost-white background. Its client-name marquee sits directly underneath inside the same panel, using the 16 names from winstar_clients.txt as logo placeholders. The navy image treatment and sector tiles were removed. Marquee scrolls continuously, pauses on hover/focus and becomes manually scrollable for reduced-motion preferences. Logo approval and entity-name reconciliation remain pending.
+
+
+## Our Solutions overview — rough-out, 16 October 2026
+
+Current work moves from the implemented homepage to `services.html`. The overview introduces the combined offer, presents three photo-led service groups with links to all ten individual services, answers four general buying questions and closes with a Request a Quote CTA. Existing slider photographs are temporary layout assets, not representations of Winstar personnel or installations; replace with relevant photography before final approval.
+
+Group allocations follow the current navigation: Aviation Security is under Manned Security; Electric Fencing is under Access Control. Electronic Security includes CCTV, biometric/card access and alarm systems. The overview does not introduce additional service pages or change navigation.
+
+FAQ approach: keep broad selection, combining services, access-control distinctions and quote-preparation questions on the overview. Individual pages can answer focused questions about deployment, installation, operation and maintenance where useful and factually supported. Confirm Winstar-specific commitments before publishing; avoid invented response times, pricing, coverage or guarantees. Draft answers are for review.
+
+Next detailed page: Manned Guarding, establishing a reusable service-page structure. Review this overview before extending it.
+
+
+## International research and proposed design philosophy — 16 October 2026
+
+See [international design research](review/international-design-research.md) for source comparisons, inspected screenshots, proposed page families, visual rules, photography brief and FAQ policy. This is a recommendation for review, not automatic approval of every proposed detail.
+
+Working principle: visible competence, clearly explained. Services describe scope and delivery; sector pages explain operating needs; Company substantiates organisational capacity. Prefer useful photography, restrained typography, consistent spacing and evidence near relevant claims. Retain the existing three service groups, header, footer and accepted homepage direction. General FAQs belong on the overview; specific practical questions belong on applicable service pages.
+
+Current implementation supersedes earlier design-history notes: Lab Grotesque is the body family, Integral CF remains a homepage accent, menu panels are solid desaturated navy/slate #39375b, and header contact details are removed. The shared footer and homepage are built drafts. Our Solutions is roughed out. Next proposed build is Manned Guarding to establish a reusable detailed-page template.
+
+
+## Research applied to service pages — 16 October 2026
+
+Our Solutions now has an explicit page title and breadcrumb, three photographic groups using images from Winstar’s supplied profile, a contrasting panel explaining the relationship between security layers, general FAQs and an enquiry CTA. Existing groupings and all ten service links remain.
+
+Manned Guarding is the first detailed-page draft: introduction and photograph, section links, duties, delivery support, selected sectors, five specific FAQs, complementary services and enquiry. It shares `static/services.css` with the overview. Source for vetting, training, supervisory checks, control-room communication and written reporting: profile PDF page 6; account management: page 4; training/vetting also supported by notebook extraction page 4. Since 2001 follows the user’s confirmed professional operating date. Avoid stale headcounts, precise response-time guarantees and unverified performance claims.
+
+Photographs are extracted from profile PDF pages 6, 11 and 13; provenance is recorded in `static/images/services/sources.md`. All remain subject to final publication review. No invented customer evidence is added.
+
+Homepage judgement: retain the established structure and design. The immediate priority is reviewing this service-page template, followed by consistent rollout. Later homepage improvements should prioritise authentic service photography and verified testimonials over structural redesign. Browser visual review remains pending because local-file preview was blocked; local link, asset, heading and fragment checks passed.

@@ -20,3 +20,6 @@ review/notebook-pages/
 .idea/
 Thumbs.db
 .DS_Store
+
+# Local emergency recovery archives
+review/homepage-recovery-*/

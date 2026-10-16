@@ -3,25 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Winstar Security Solutions</title>
+  <title>Winstar Security Solutions | Corporate &amp; Private Security</title>
+
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="static/navigation.css">
   <script src="static/navigation.js" defer></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="static/footer.css">
+  <link rel="stylesheet" href="static/typography.css">
+  <link rel="stylesheet" href="static/home.css">
+  <script src="static/home.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
-    <div class="brand-header">
-      <a class="brand" href="index.html" aria-label="Winstar Security Solutions home"><img src="winstar-logo.svg" width="320" height="180" alt="Winstar Security"></a>
-      <div class="header-contact">
 
-        <div class="hotline-numbers"><a href="tel:+254722535066">0722 535066</a><span aria-hidden="true"> / </span><a href="tel:+254734535066">0734 535066</a></div>
-        <a class="header-email" href="mailto:info@winstarsecurity.co.ke">info@winstarsecurity.co.ke</a>
-      </div>
-      <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
-    </div>
     <div class="navigation-row"><div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Winstar Security Solutions home"><img src="winstar-logo.svg" width="320" height="180" alt="Winstar Security"></a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-link" aria-current="page">HOME</a>
         <details class="menu">
@@ -44,23 +42,138 @@
         </details>
         <a href="contact_us.html" class="nav-link">CONTACT US</a>
         <a class="quote-button" href="contact_us.html?enquiry=quote">REQUEST FOR QUOTE</a>
-        <div class="mobile-menu-contact" aria-label="Contact details">
-          <a href="tel:+254722535066">0722 535066</a>
-          <a href="tel:+254734535066">0734 535066</a>
-          <a class="mobile-menu-email" href="mailto:info@winstarsecurity.co.ke">info@winstarsecurity.co.ke</a>
-        </div>
+
       </nav>
     </div></div>
   </header>
-  <main id="main-content">
-    <h1>Home</h1>
-    <!-- Planned section: Hero: Main Introduction, Capacity, Differentiator -->
-    <!-- Planned section: Services Overview -->
-    <!-- Planned section: Experience &amp; Sector Expertise -->
-    <!-- Planned section: Client Logos -->
+  <main id="main-content" class="home-main">
+    <div class="hero-slider" role="region" aria-roledescription="carousel" aria-label="Discover Winstar">
+      <section class="hero-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+        <img class="hero-image" src="static/images/slider/corporate-building.jpg" alt="" fetchpriority="high">
+        <div class="hero-content">
+
+          <h1>For all your corporate &amp; Private Security needs</h1>
+          <p class="hero-description">Professional guarding and connected security solutions for your people, property and operations.</p>
+          <a class="hero-cta" href="services.html">Explore Our Solutions <img class="hero-cta-chevron" src="static/images/icons/chevron-right.svg" width="18" height="18" alt="" aria-hidden="true"></a>
+        </div>
+      </section>
+      <section class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" hidden>
+        <img class="hero-image" src="static/images/slider/workplace.jpg" alt="" loading="lazy">
+        <div class="hero-content">
+
+          <h2>Protection shaped around your world</h2>
+          <p class="hero-description">From businesses and learning institutions to homes, hospitality and logistics, every environment has its own security needs.</p>
+          <a class="hero-cta" href="sectors.html">Who We Serve <img class="hero-cta-chevron" src="static/images/icons/chevron-right.svg" width="18" height="18" alt="" aria-hidden="true"></a>
+        </div>
+      </section>
+      <section class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" hidden>
+        <img class="hero-image" src="static/images/slider/office.jpg" alt="" loading="lazy">
+        <div class="hero-content">
+
+          <h2>People. Systems. Dependable protection.</h2>
+          <p class="hero-description">Trained personnel, operational supervision and coordinated support form the foundation of Winstar’s approach to security.</p>
+          <a class="hero-cta" href="about_us.html">About Winstar <img class="hero-cta-chevron" src="static/images/icons/chevron-right.svg" width="18" height="18" alt="" aria-hidden="true"></a>
+        </div>
+      </section>
+      <div class="slider-controls">
+
+
+        <div class="slider-dots" aria-label="Choose slide">
+          <button type="button" data-slide="0" aria-label="Show slide 1" aria-current="true"></button>
+          <button type="button" data-slide="1" aria-label="Show slide 2" aria-current="false"></button>
+          <button type="button" data-slide="2" aria-label="Show slide 3" aria-current="false"></button>
+        </div>
+
+      </div>
+    </div>
+    <section class="services-overview" aria-labelledby="services-overview-title">
+      <h2 id="services-overview-title">PROACTIVE PROTECTION <span class="overview-title-secondary">TAILORED FOR YOUR BUSINESS AND OPERATIONS</span></h2>
+      <div class="services-overview-copy">
+        <p>Protecting your business and property takes a combination of personnel, technology and strategy. Winstar brings together trained guards, surveillance, access control and alarm response to provide security shaped around your premises and daily operations.</p>
+        <a class="overview-cta" href="services.html">Explore Our Solutions <img src="static/images/icons/chevron-right.svg" width="18" height="18" alt="" aria-hidden="true"></a>
+      </div>
+    </section>
+    <section class="experience-panel" aria-labelledby="experience-title">
+      <div class="experience-inner">
+        <div class="experience-intro">
+          <div class="experience-image"><img src="static/images/slider/corporate-building.jpg" alt="" loading="lazy"></div>
+          <div class="experience-text">
+          <div><p class="experience-kicker">EXPERIENCE &amp; SECTOR EXPERTISE</p>
+          <h2 id="experience-title">Diverse environments.<br>One commitment to protection.</h2></div>
+          <div class="experience-copy"><p>Providing professional security solutions since 2001, Winstar understands that each environment brings its own priorities. We shape protection around the people, premises and daily activities that make your operation unique.</p>
+          <a class="overview-cta" href="sectors.html">Who We Serve <img src="static/images/icons/chevron-right.svg" width="18" height="18" alt="" aria-hidden="true"></a></div>
+          </div>
+        </div>
+          <div class="client-marquee-panel">
+            <p class="client-marquee-label">Trusted by</p>
+            <div class="client-marquee" tabindex="0" aria-label="Winstar clients. Scrolling pauses on hover or keyboard focus.">
+              <div class="client-marquee-track">
+                <ul class="client-name-list"><li><img src="static/images/Client%20Logos/mku.png" alt="Mt Kenya University" loading="lazy"></li><li><img src="static/images/Client%20Logos/chai-sacco.png" alt="Chai Trading Sacco" loading="lazy"></li><li><img src="static/images/Client%20Logos/burger-king.png" alt="Burger King" loading="lazy"></li><li><img src="static/images/Client%20Logos/finlays.png" alt="Finlays" loading="lazy"></li><li><img src="static/images/Client%20Logos/nas-servair.png" alt="NAS Servair" loading="lazy"></li><li><img src="static/images/Client%20Logos/sidian-bank.png" alt="Sidian Bank" loading="lazy"></li><li><img src="static/images/Client%20Logos/unigroup-transporters.png" alt="Unigroup Transporters" loading="lazy"></li><li><img src="static/images/Client%20Logos/english-marina.png" alt="Englishpoint Marina" loading="lazy"></li><li><img src="static/images/Client%20Logos/nict.png" alt="Nairobi Inland Cargo Terminal" loading="lazy"></li><li><img src="static/images/Client%20Logos/smep-bank.png" alt="SMEP" loading="lazy"></li><li><img src="static/images/Client%20Logos/prime-bank.png" alt="Prime Bank" loading="lazy"></li><li><img src="static/images/Client%20Logos/syokimau-icd.png" alt="Syokimau ICD" loading="lazy"></li><li><img src="static/images/Client%20Logos/diamonds-leisure.png" alt="Diamonds Leisure Beach &amp; Golf Resort" loading="lazy"></li><li><img src="static/images/Client%20Logos/jumuia-resorts.png" alt="Jumuia Resorts" loading="lazy"></li><li><img src="static/images/Client%20Logos/almanara-resort.png" alt="Almanara Luxury Boutique Hotel &amp; Villas" loading="lazy"></li><li><img src="static/images/Client%20Logos/nyali-golf.png" alt="Nyali Golf &amp; Country Club" loading="lazy"></li><li><img src="static/images/Client%20Logos/nyaligolf-view.png" alt="Nyali Golf View Residences" loading="lazy"></li><li><img src="static/images/Client%20Logos/car-general.png" alt="Car &amp; General" loading="lazy"></li></ul>
+                <ul class="client-name-list" aria-hidden="true"><li><img src="static/images/Client%20Logos/mku.png" alt="Mt Kenya University" loading="lazy"></li><li><img src="static/images/Client%20Logos/chai-sacco.png" alt="Chai Trading Sacco" loading="lazy"></li><li><img src="static/images/Client%20Logos/burger-king.png" alt="Burger King" loading="lazy"></li><li><img src="static/images/Client%20Logos/finlays.png" alt="Finlays" loading="lazy"></li><li><img src="static/images/Client%20Logos/nas-servair.png" alt="NAS Servair" loading="lazy"></li><li><img src="static/images/Client%20Logos/sidian-bank.png" alt="Sidian Bank" loading="lazy"></li><li><img src="static/images/Client%20Logos/unigroup-transporters.png" alt="Unigroup Transporters" loading="lazy"></li><li><img src="static/images/Client%20Logos/english-marina.png" alt="Englishpoint Marina" loading="lazy"></li><li><img src="static/images/Client%20Logos/nict.png" alt="Nairobi Inland Cargo Terminal" loading="lazy"></li><li><img src="static/images/Client%20Logos/smep-bank.png" alt="SMEP" loading="lazy"></li><li><img src="static/images/Client%20Logos/prime-bank.png" alt="Prime Bank" loading="lazy"></li><li><img src="static/images/Client%20Logos/syokimau-icd.png" alt="Syokimau ICD" loading="lazy"></li><li><img src="static/images/Client%20Logos/diamonds-leisure.png" alt="Diamonds Leisure Beach &amp; Golf Resort" loading="lazy"></li><li><img src="static/images/Client%20Logos/jumuia-resorts.png" alt="Jumuia Resorts" loading="lazy"></li><li><img src="static/images/Client%20Logos/almanara-resort.png" alt="Almanara Luxury Boutique Hotel &amp; Villas" loading="lazy"></li><li><img src="static/images/Client%20Logos/nyali-golf.png" alt="Nyali Golf &amp; Country Club" loading="lazy"></li><li><img src="static/images/Client%20Logos/nyaligolf-view.png" alt="Nyali Golf View Residences" loading="lazy"></li><li><img src="static/images/Client%20Logos/car-general.png" alt="Car &amp; General" loading="lazy"></li></ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="testimonials-panel" aria-labelledby="testimonials-title">
+      <div class="testimonials-inner">
+        <div class="testimonials-heading-row">
+          <a class="overview-cta" href="contact_us.html?enquiry=quote">Request a Quote <img src="static/images/icons/chevron-right.svg" width="18" height="18" alt="" aria-hidden="true"></a>
+          <h2 id="testimonials-title">Client Testimonials</h2>
+        </div>
+        <div class="testimonial-grid"><article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote><p>A reassuring security presence matters to our staff and visitors. We value courteous guards who remain attentive throughout the day.</p></blockquote><p class="testimonial-source">Illustrative draft · attribution pending</p></article>
+<article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote><p>Our premises have specific access and security needs. A solution built around how we operate gives us greater confidence.</p></blockquote><p class="testimonial-source">Illustrative draft · attribution pending</p></article>
+<article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote><p>We value a security partner who keeps us informed, follows up on concerns and makes it easy to reach the right people.</p></blockquote><p class="testimonial-source">Illustrative draft · attribution pending</p></article>
+<article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote><p>Knowing that personnel and security systems are supported by a coordinated operation brings welcome reassurance.</p></blockquote><p class="testimonial-source">Illustrative draft · attribution pending</p></article></div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <!-- Shared footer to be implemented. -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" aria-label="Winstar Security Solutions home"><img src="static/images/winstar-logo-white.svg" width="320" height="180" alt="Winstar Security"></a>
+        <p class="footer-tagline">For all your corporate &amp; private security needs</p>
+        <p>Professional security solutions since 2001. People, technology and coordinated operations supporting protection for businesses, institutions and homes.</p>
+      </div>
+      <nav aria-label="Footer solutions">
+        <h2>Our Solutions</h2>
+        <ul>
+          <li><a href="manned-guarding.html">Manned Guarding</a></li>
+          <li><a href="cctv-surveillance.html">CCTV &amp; Surveillance</a></li>
+          <li><a href="security-alarm-systems.html">Security Alarm Systems</a></li>
+          <li><a href="access-control.html">Access Control</a></li>
+          <li><a href="electric-fencing.html">Electric Fencing</a></li>
+          <li><a href="aviation-security.html">Aviation Security</a></li>
+          <li><a href="services.html">Explore All Solutions</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer company">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="about_us.html">About Winstar</a></li>
+          <li><a href="sectors.html">Who We Serve</a></li>
+          <li><a href="social-responsibility.html">Social Responsibility</a></li>
+          <li><a href="policies-commitments.html">Policies &amp; Commitments</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section class="footer-contact" aria-labelledby="footer-contact-heading">
+        <h2 id="footer-contact-heading">Contact</h2>
+        <a class="footer-phone" href="tel:+254722535066">0722 535066</a>
+        <a class="footer-phone" href="tel:+254734535066">0734 535066</a>
+        <a class="footer-email" href="mailto:info@winstarsecurity.co.ke">info@winstarsecurity.co.ke</a>
+        <address><strong>Mombasa Head Office</strong>Rozina House, Moi Avenue<br>Mombasa, Kenya</address>
+        <address><strong>Nairobi Office</strong>Liberty Plaza, 4th Floor<br>Mombasa Road, Nairobi</address>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Winstar Security Solutions. All rights reserved.</p>
+      <nav aria-label="Legal information">
+        <a href="data-protection-policy.html">Data Protection Policy</a>
+        <a href="privacy-notice.html">Privacy Notice</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

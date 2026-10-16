@@ -21,38 +21,47 @@ Living implementation checklist. Strategy and agreed content requirements are in
 - [x] Build Company dropdown.
 - [x] Build mobile navigation and keyboard interactions.
 - [x] Place Request for Quote CTA at far right on desktop.
-- [ ] Build shared footer, including Data Protection Policy, Privacy Notice and Terms of Use links.
+- [x] Build shared footer, including Data Protection Policy, Privacy Notice and Terms of Use links.
 - [x] Apply shared header and navigation to all 26 pages.
-- [ ] Apply shared footer to all pages.
+- [x] Apply shared footer to all pages.
 
-## Next: Shared Footer
+## Shared Footer
 
 Header and navigation are accepted as the current baseline; continue refinements as page content develops.
 
-- [ ] Agree footer content, hierarchy and layout.
-- [ ] Build responsive footer and shared styling.
-- [ ] Include Data Protection Policy, Privacy Notice and Terms of Use links.
-- [ ] Include approved company, contact and navigation content.
-- [ ] Apply footer across all 26 pages.
+- [x] Agree footer content, hierarchy and layout.
+- [x] Build responsive footer and shared styling.
+- [x] Include Data Protection Policy, Privacy Notice and Terms of Use links.
+- [x] Include supplied company, contact and navigation content (final publication approval pending).
+- [x] Apply footer across all 26 pages.
 - [ ] Verify footer links and responsive presentation.
 
 ## Home Page
 
 - [x] Navigation.
-- [ ] Three-slide hero: Main Introduction, Capacity, Differentiator.
-- [ ] Services overview: short paragraph, suitable image and Services CTA.
-- [ ] Experience & Sector Expertise, with Sectors CTA.
-- [ ] Client logos slider/marquee using approved selection.
-- [ ] Footer.
+- [x] Build three-slide hero: tagline/Services CTA, sector experience/Sectors CTA, operational capacity/About CTA.
+- [ ] Review hero imagery, copy and visual presentation with client.
+- [x] Services overview: large heading left, paragraph and Services CTA right; no image.
+- [x] Experience & Sector Expertise: image left, dark slate copy panel right, red title accent and integrated client-logo marquee (visual/client review pending).
+- [x] Client-logo marquee using the 18 supplied image assets; current-client publication approval remains pending.
+- [x] Footer.
 - [ ] Finalise homepage copy and imagery.
 - [ ] Verify mobile layout, accessibility and links.
 
-## Services
+## Our Solutions — current page in progress
 
-- [ ] Agree overview-page structure and content.
-- [ ] Add section-level checklist after agreement.
-- [ ] Agree individual service-page structure and content.
-- [ ] Build and verify agreed pages.
+- [x] Rough out introduction and overview-page layout.
+- [x] Add three photo-led groups: Manned Security, Electronic Security and Access Control.
+- [x] Link all ten individual services from their respective groups.
+- [x] Add four general FAQs using keyboard-accessible expandable answers.
+- [x] Add closing Request a Quote CTA.
+- [ ] Review rough layout and draft copy with user.
+- [x] Replace overview stock placeholders with relevant photography extracted from the supplied Winstar profile (publication review pending).
+- [ ] Confirm service descriptions and FAQ wording with Winstar.
+- [ ] Verify desktop/mobile presentation and keyboard interactions in browser.
+- [x] Develop Manned Guarding as the first individual service-page template; user and browser review pending.
+- [ ] Add focused FAQs where they answer useful service-specific questions; avoid duplicating overview FAQs.
+- [ ] Build remaining individual service pages after template agreement.
 
 ## Sectors
 
@@ -108,8 +117,40 @@ Header and navigation are accepted as the current baseline; continue refinements
 
 ## Open decisions
 
-- [ ] Decide whether to include a closing enquiry section before the homepage footer.
-- [ ] Determine detailed footer content and layout.
-- [ ] Determine hero copy, imagery and slide CTAs.
+- [x] Use Client Testimonials as the closing homepage panel, with a quote CTA.
+- [x] Determine detailed footer content and layout.
+- [x] Establish hero draft copy, placeholder imagery and slide CTAs; final approval remains pending.
 
 Careers is excluded from current scope.
+
+## Testimonials (final homepage panel)
+
+- [x] Add four clearly labelled illustrative draft cards.
+- [ ] Replace drafts with verified customer quotes and approved attributions before publication.
+
+
+## International research and design system
+
+- [x] Compare international security and related service websites for content patterns.
+- [x] Inspect selected desktop visual references and retain research screenshots.
+- [x] Document proposed content philosophy, page families, styling rules and photography brief.
+- [ ] Review and settle the proposed philosophy with user.
+- [ ] Implement and review the Manned Guarding template against this brief.
+- [x] Share internal-page styles, FAQs and CTA treatment across overview and guarding drafts; refine after visual review.
+- [ ] Test the pattern on Canine Security and an electronic service before wider rollout.
+
+
+## Manned Guarding — first detailed-page draft
+
+- [x] Breadcrumb, service title, introduction, profile photograph and quote CTA.
+- [x] On-page links to scope, delivery, settings and FAQs.
+- [x] Four service-duty summaries.
+- [x] Delivery panel: selection/training, supervision/communication, accountability/records.
+- [x] Relevant sector links and two complementary services.
+- [x] Five focused FAQs and closing enquiry CTA.
+- [x] Check local links, fragment targets, image alternatives and heading structure.
+- [ ] Review photographic crops, spacing and layout on desktop and mobile.
+- [ ] Verify keyboard navigation and FAQ behaviour in browser.
+- [ ] Approve wording against current operational practice.
+
+Local-file browser preview was blocked by browser policy during this pass. Structural checks passed; visual checks are still pending. Homepage retained: the research supports its existing structure. Future homepage refinement should focus on approved operational photography and genuine testimonials.

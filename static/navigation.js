@@ -56,3 +56,23 @@
     }
   });
 })();
+
+// Desktop pointer hover; existing click handlers retain touch and keyboard support.
+(() => {
+  const desktop = window.matchMedia('(min-width:1051px) and (hover:hover) and (pointer:fine)');
+  document.querySelectorAll('.menu').forEach(menu => {
+    let timer;
+    menu.addEventListener('pointerenter', () => {
+      clearTimeout(timer);
+      if (desktop.matches && !menu.open) menu.querySelector('summary').click();
+    });
+    menu.addEventListener('pointerleave', () => {
+      if (desktop.matches) timer = setTimeout(() => {
+        if (!menu.contains(document.activeElement)) menu.open = false;
+      }, 120);
+    });
+    menu.addEventListener('focusout', event => {
+      if (desktop.matches && !menu.contains(event.relatedTarget) && !menu.matches(':hover')) menu.open = false;
+    });
+  });
+})();

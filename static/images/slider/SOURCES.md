@@ -7,3 +7,6 @@ Downloaded locally from Unsplash for layout exploration. These photographs are i
 - Office: https://images.unsplash.com/photo-1497366754035-f200968a6e72
 
 Download parameters: width 1920px, quality 85, automatic format. Source licensing: https://unsplash.com/license
+# Winstar photographic replacements — 18 November 2026
+
+Current slider images: `winstar-guarding.jpg`, `winstar-site-security.jpg`, `winstar-response.jpg`. Built-in image-tool remixes of supplied Winstar photographs, with background extensions, cleanup and reframing. Original people and operations supplied by the user; final scenes contain generated edits and should not be treated as unaltered documentary photographs. Source mapping and exact prompts are in `review/photo-scout/replacement-log.md`.

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "dome",
+    "original": [
+      1600,
+      1600
+    ],
+    "size": [
+      400,
+      400
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 82423,
+    "source": "https://www.axis.com/sites/axis/files/2022-01/1600_p3265-lve-w-weathershield-wall-front-2110.png",
+    "page": "https://www.axis.com/products/axis-p3265-lve/support"
+  },
+  {
+    "name": "bullet",
+    "original": [
+      1600,
+      1600
+    ],
+    "size": [
+      400,
+      400
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 55704,
+    "source": "https://www.axis.com/sites/axis/files/2022-11/p1465le_p1467le_p1468le_wall_angle_left_2112-Productimage.png",
+    "page": "https://www.axis.com/products/axis-p1465-le/support"
+  },
+  {
+    "name": "ptz",
+    "original": [
+      1600,
+      1600
+    ],
+    "size": [
+      400,
+      400
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 67357,
+    "source": "https://www.axis.com/sites/axis/files/2021-05/q6315-w-weathercap-wallmount-front-2010.png",
+    "page": "https://www.axis.com/products/axis-q6315-le/support"
+  },
+  {
+    "name": "panoramic",
+    "original": [
+      1600,
+      1600
+    ],
+    "size": [
+      400,
+      400
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "bytes": 67972,
+    "source": "https://www.axis.com/sites/axis/files/2023-01/m4318plve_angle_left_2208-Productimage.png",
+    "page": "https://www.axis.com/products/axis-m4318-plve"
+  }
+]

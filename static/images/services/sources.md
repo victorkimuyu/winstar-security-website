@@ -1,6 +1,34 @@
 # Service photography
+- control-room-monitor-wall.jpg: supplied `Photo Gallery/WINSTAR PHOTOS 2/Resized/Winstar Security (105).JPG`, selected 18 November 2026 for the Alarms monitoring section. Landscape crop/web export only, no generated equipment or feed changes; operators predominantly viewed from behind. Replaces the desk/phone photograph.
+- alarm-response-radio-anonymous.webp: supplied `Photo Gallery/WINSTAR PHOTOS 2/Resized/Winstar Security (6).jpg`, selected 18 November 2026 as Alarms hero. Two fictional generated faces integrated into a web-sized copy; vehicle, radio, uniforms and surroundings preserved outside face regions.
+- event-winstar-guards-v2.jpg: 18 November 2026 built-in edit of the event scene; darker-complexioned, clean-shaven fictional male guard with fuller lips and closed-mouth smile. Current Event Security hero.
+- event-winstar-guards.jpg: built-in image-tool revision of the generated event entrance, 18 November 2026. Guards follow supplied Winstar white-shirt, cap and belt references with fictional faces. Current Event Security hero, replacing the golf image.
+- event-winstar-guards.jpg: built-in image-tool revision of the generated event entrance, 18 November 2026. Guards follow supplied Winstar white-shirt, cap and belt references with fictional faces. Current Event Security hero, replacing the golf image.
+- event-winstar-guards.jpg: built-in image-tool revision of the earlier generated event entrance, 18 November 2026. Guards now follow supplied Winstar white-shirt/cap/belt references; fictional faces retained. Replaces the golf hero.
+- event-golf-banner.jpg: supplied `Photo Gallery/WINSTAR PHOTOS/Resized/_CBM0052.jpg`, selected 18 November 2026 for the Event Security hero. Web copy without generative edits; banner kept on the left, text moved right. Distant golfer has no clearly identifiable face.
+- 18 November face-anonymisation pass: current photo derivatives with `-anonymous.webp` filenames use fictional generated faces integrated into the prior scenes. Outside-face pixels retained except the requested blue visitor-car and hair/glasses edits on homepage slide 2. See `review/photo-scout/anonymisation-log.md` and `anonymisation-audit.json`.
+- November 18 replacements: `cctv-technician-remix.jpg`, `k9-search-remix.jpg` and `control-room-refined.jpg` are built-in image-tool edits of supplied Resized photos. `visitor-reception.jpg`, `team-briefing.jpg`, `response-deployment.jpg` and `response-fleet.jpg` are web-sized copies of supplied photos. Full source mapping and edit prompts: `review/photo-scout/replacement-log.md`. Original files retained.
+- event-security-hero.png: AI-generated event guest-check scene, 15 November 2026. Illustrative conference entrance, not evidence of a particular Winstar event deployment.
+- event-security-hero.png: AI-generated event guest-check scene, 15 November 2026. Illustrative conference entrance, not evidence of a particular Winstar event deployment.
+- alarm-siren-hero.png: AI-generated installed intruder siren/strobe scene, 15 November 2026. Current Alarms hero; generic illustrative equipment, not a specific stocked model.
+- alarm-keypad-hero.png: AI-generated office alarm-keypad scene, 15 November 2026. Illustrative; original response-team image remains elsewhere on the page.
+- alarm-keypad-hero.png: AI-generated office alarm-keypad scene, 15 November 2026. Illustrative; original response-team image remains elsewhere on the page.
+- biometric-card-access-hero.png: AI-generated office card-reader scene, 15 November 2026; illustrative, not a verified Winstar installation.
+- biometric-card-access-hero.png: AI-generated office card-reader scene, 15 November 2026; illustrative, not a verified Winstar installation.
+- aviation-checkpoint-hero-v4.png: AI edit, 15 November 2026. Middle-aged Asian visitor and Winstar-embroidered sweaters with details informed by supplied uniform photos 15 and 63. Current Aviation hero; illustrative scene.
+- aviation-checkpoint-hero-v3.png: AI edit of revision 2, 15 November 2026. Plain black guard sweaters, no flag patches, and friendly eye contact between standing guard and visitor. Current Aviation hero; illustrative scene.
+- aviation-checkpoint-hero-v2.png: AI-edited checkpoint concept, 15 November 2026. Closer scene with suitcase on the conveyor, no passenger backpack/shoulder bag, monitor operator and standing guard. Illustrative image; previous concept retained.
+- aviation-checkpoint-hero.png: AI-generated airport checkpoint concept, 15 November 2026. Defined screening lanes, scanner, inspection stations and queue barriers; replaces the open-hall hero. Illustrative, not a verified Winstar deployment.
+- aviation-hero-expanded.png: AI-edited panoramic version of the supplied aviation illustration, 15 November 2026. Oversized dog replaced with a smaller Labrador; illustrative scene, not evidence of operational breed selection or deployment.
+- access-control-hero.png: AI-generated illustrative staffed turnstile entrance, created with the built-in image tool on 15 November 2026. Not a photograph of a verified Winstar client site.
+- k9-hero-expanded.png: AI-expanded landscape version of k9-handler.jpg, created with the built-in image tool on 15 November 2026 for the K9 hero. Original retained; extended surroundings are illustrative.
+- guard-team-hero-expanded.png: AI-expanded landscape version of guard-team.jpg, created with the built-in image tool on 15 November 2026 for the Security Guards hero. Original portrait retained. Generated surroundings are illustrative.
 Extracted from the supplied `sources/Winstar Profile.pdf` on 16 October 2026. JPEGs optimised for web use; no retouching.
 - guard-at-entry.jpg and guard-team.jpg: PDF page 6 (Manned Guarding).
 - cctv-installation.jpg: PDF page 11 (Electronic Security).
 - perimeter-security.jpg: PDF page 13 (Electric Fencing).
+- alarm-response-team.jpg: PDF page 7 (Alarms Monitoring and Response), prepared 21 October 2026.
+- winstar-patrol-vehicle.jpg: PDF page 9 (VIP and cargo escorts), prepared 21 October 2026; used as general Winstar operational/vehicle photography.
+- k9-handler.jpg: embedded photograph from PDF page 8 (Dog Security), extracted 6 November 2026 without retouching.
 Final publication approval remains part of the site content review.
+- aviation-security-profile.jpg: embedded 1024px square illustration from PDF page 10 (Aviation Security), extracted 15 November 2026 without alteration. Illustrative supplied material, not independently verified deployment photography.

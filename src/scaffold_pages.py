@@ -6,8 +6,8 @@ ROOT = Path(__file__).resolve().parent.parent
 PAGES = {
     'index.html': ('Home', ['Hero: Main Introduction, Capacity, Differentiator', 'Services Overview', 'Experience & Sector Expertise', 'Client Logos']),
     'services.html': ('Services', ['Manned Security', 'Electronic Security', 'Access Control', 'Featured: Electric Fencing and Aviation Security']),
-    'manned-guarding.html': ('Manned Guarding', []),
-    'canine-security.html': ('Canine Security', []),
+    'manned-guarding.html': ('Security Guards', []),
+    'canine-security.html': ('K9 Security Dogs', []),
     'event-security.html': ('Event Security', []),
     'vip-cargo-escorts.html': ('VIP & Cargo Escorts', []),
     'cctv-surveillance.html': ('CCTV Cameras & Surveillance', []),

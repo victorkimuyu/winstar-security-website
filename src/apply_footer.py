@@ -19,7 +19,7 @@ footer = f'''  <footer class="site-footer">
       <nav aria-label="Footer solutions">
         <h2>Our Solutions</h2>
         <ul>
-          <li><a href="manned-guarding.html">Manned Guarding</a></li>
+          <li><a href="manned-guarding.html">Security Guards</a></li>
           <li><a href="cctv-surveillance.html">CCTV &amp; Surveillance</a></li>
           <li><a href="security-alarm-systems.html">Security Alarm Systems</a></li>
           <li><a href="access-control.html">Access Control</a></li>

@@ -6,7 +6,7 @@ from scaffold_pages import PAGES
 
 ROOT = Path(__file__).resolve().parent.parent
 groups = {
-    'Manned Security': [('manned-guarding.html','Manned Guarding'),('canine-security.html','Canine Security'),('event-security.html','Event Security'),('vip-cargo-escorts.html','VIP & Cargo Escorts'),('aviation-security.html','Aviation Security')],
+    'Manned Security': [('manned-guarding.html','Security Guards'),('canine-security.html','K9 Security Dogs'),('event-security.html','Event Security'),('vip-cargo-escorts.html','VIP & Cargo Escorts'),('aviation-security.html','Aviation Security')],
     'Electronic Security': [('cctv-surveillance.html','CCTV Cameras & Surveillance'),('biometric-card-access.html','Biometric & Card-Based Access'),('security-alarm-systems.html','Security Alarm Systems')],
     'Access Control': [('access-control.html','Turnstiles, Bollards & Barriers'),('electric-fencing.html','Electric Fencing')],
 }

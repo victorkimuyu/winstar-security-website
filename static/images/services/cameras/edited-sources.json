@@ -1,0 +1,84 @@
+[
+  {
+    "file": "static/images/services/cameras/turret-unbranded.png",
+    "source": "sources/sample_cctvs/xyz327800617_1_1b68f899-f869-4f25-8bfb-01d7fe489e87.png",
+    "edited_with": "Built-in imagegen",
+    "crop": [
+      25,
+      0,
+      1230,
+      1254
+    ],
+    "dimensions": [
+      384,
+      400
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bytes": 161211
+  },
+  {
+    "file": "static/images/services/cameras/bullet-unbranded.png",
+    "source": "sources/sample_cctvs/xyz327800611_2_81ed42cd-ef9e-452d-98c6-b7b631269320.png",
+    "edited_with": "Built-in imagegen",
+    "crop": [
+      0,
+      300,
+      1254,
+      935
+    ],
+    "dimensions": [
+      400,
+      203
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bytes": 82323
+  },
+  {
+    "file": "static/images/services/cameras/ptz-unbranded.png",
+    "source": "sources/sample_cctvs/xyz327000458_1_84d3e56b-8d59-4d19-b8d9-7475cedb6296.png",
+    "edited_with": "Built-in imagegen",
+    "crop": [
+      210,
+      0,
+      1040,
+      1254
+    ],
+    "dimensions": [
+      265,
+      400
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bytes": 105528
+  },
+  {
+    "file": "static/images/services/cameras/panovu-unbranded.png",
+    "source": "sources/sample_cctvs/hikvision-panovu-ds-2cd6924g0-ihs-original.jpg",
+    "source_url": "https://assets.hikvision.com/prd/normal/all/image/m000026522/%E5%A4%9A%E7%9B%AE3-%E5%9F%BA%E7%BA%BF-800W--%E6%AD%A3%E9%9D%A2.png",
+    "product": "Hikvision DS-2CD6924G0-IHS",
+    "edited_with": "Built-in imagegen",
+    "crop": [
+      0,
+      0,
+      1208,
+      1302
+    ],
+    "dimensions": [
+      371,
+      400
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bytes": 149147
+  }
+]

@@ -1,0 +1,42 @@
+/* Alarm systems: common protection, connected monitoring and mobile response. */
+.alarms-page h1,.alarms-page h2{font-weight:300}
+.alarms-page h3{font-size:18px;font-weight:500;line-height:1.2;margin:0 0 12px}
+.alarms-page p{font-size:15px;line-height:1.55}
+.alarms-section{padding-block:56px}
+.alarms-section h2{font-size:clamp(28px,2.6vw,36px);line-height:1.1;margin:0 0 32px}
+.alarms-hero{background:#f4f5f7;padding:36px 0 52px}
+.alarms-hero-grid{display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:64px}
+.alarms-hero h1{font-size:clamp(36px,3.8vw,52px);line-height:1.08;letter-spacing:-1px;max-width:17ch;margin:0 0 24px}
+.alarms-hero-copy>p{font-size:20px;font-weight:300;line-height:1.4;max-width:38ch;margin:0 0 30px}
+.alarms-hero figure{margin:0;overflow:hidden;clip-path:polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,0 100%)}
+.alarms-hero figure img{display:block;width:100%;height:430px;object-fit:cover;object-position:62% center}
+.alarms-options-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.alarms-options-grid article{min-width:0;border-top:1px solid #dedee7;padding-top:20px}
+.alarm-option-number{display:block;font-size:40px;font-weight:300;line-height:1;color:var(--blue);margin-bottom:20px}
+.alarms-options-grid p{margin:0;max-width:40ch}
+.alarms-response{background:var(--slate);color:#fff;position:relative;isolation:isolate;padding-block:0;overflow:hidden}
+.alarms-response::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,24,47,.97) 0%,rgba(20,24,47,.88) 30%,rgba(20,24,47,.35) 60%,rgba(20,24,47,.08) 100%)}
+.alarms-response-grid{display:flex;align-items:center;min-height:390px;padding-block:56px}
+.alarms-response-copy{width:46%;max-width:500px}
+.alarms-response h2{color:var(--sky);font-size:clamp(32px,3.3vw,44px);margin-bottom:24px}
+.alarms-response-copy>p{color:#efeff5;max-width:45ch;margin:0;line-height:1.6}
+.alarms-response-photo{position:absolute;inset:0;z-index:-2;margin:0;overflow:hidden}
+.alarms-response-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.alarms-response-band{background:rgba(25,28,54,.76);border-top:1px solid #ffffff25;padding-block:32px}
+.alarms-response-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:56px;list-style:none;padding:0;margin:0}
+.alarms-response-steps li{min-width:0;position:relative}
+.response-step-chevron{position:absolute;right:-40px;top:50%;display:block;width:24px;height:24px;transform:translateY(-50%);color:var(--sky)}
+.alarms-response-steps p{font-size:14px;line-height:1.45;color:#efeff5;max-width:28ch;margin:0}
+.alarms-assurance{background:#eaf4f7}
+.alarms-assurance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.alarms-assurance-grid p{font-size:14px;line-height:1.5;margin:0;max-width:40ch}
+.alarms-page .solutions-faq{background:#fff;padding-block:56px}
+.alarms-page .solutions-faq h2{font-size:clamp(32px,3.5vw,46px);line-height:1.1;max-width:12ch}
+.alarms-page .solutions-questions summary{font-size:16px;padding-block:20px}
+.alarms-page .solutions-questions details p{font-size:14px;line-height:1.55;padding-bottom:20px}
+.alarms-page .solutions-enquiry{border-top:1px solid #dedee7;padding-block:48px}
+.alarms-page .solutions-enquiry h2{font-size:clamp(28px,2.6vw,36px);line-height:1.1;margin-bottom:14px}
+@media(max-width:1000px){.alarms-hero-grid,.alarms-response-grid{gap:36px}.alarms-options-grid,.alarms-assurance-grid{gap:28px}.alarms-hero figure img{height:400px}}
+@media(max-width:760px){.alarms-section{padding-block:40px}.alarms-hero{padding:28px 0 40px}.alarms-hero-grid,.alarms-response-grid{grid-template-columns:1fr;gap:30px}.alarms-hero h1{max-width:none;font-size:clamp(34px,7vw,44px)}.alarms-hero-copy>p{max-width:42ch;font-size:19px}.alarms-hero figure img{height:auto;aspect-ratio:1.5;object-position:center}.alarms-options-grid,.alarms-assurance-grid{grid-template-columns:1fr;gap:28px}.alarms-options-grid article{display:grid;grid-template-columns:46px 1fr;column-gap:18px}.alarm-option-number{grid-row:1/3;font-size:32px;margin:0}.alarms-options-grid p,.alarms-assurance-grid p{max-width:none}.alarms-response-copy>p{max-width:none}.alarms-response-steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:30px;padding-top:30px}.alarms-page .solutions-faq{padding-block:40px}.alarms-page .solutions-faq h2{max-width:none}.alarms-page .solutions-enquiry{padding-block:40px}}
+@media(max-width:760px){.alarms-response-steps{grid-template-columns:1fr;gap:52px}.response-step-chevron{top:auto;right:auto;left:0;bottom:-38px;transform:none}.alarms-response-steps p{max-width:none}}
+@media(max-width:760px){.alarms-response{padding-block:0}.alarms-response::before{background:linear-gradient(90deg,rgba(20,24,47,.94),rgba(20,24,47,.65))}.alarms-response-grid{min-height:340px;padding-block:40px}.alarms-response-copy{width:100%;max-width:480px}.alarms-response-steps{margin:0;padding:0}.alarms-response-band{padding-block:28px}.alarms-response-photo img{object-position:62% center}}

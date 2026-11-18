@@ -1,0 +1,16 @@
+/* Equal service panels and a lighter journey sequence. */
+.escorts-scope>div:first-child{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-bottom:32px}
+.escorts-scope>div:first-child p{margin:0}
+.escorts-services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.escorts-services article{padding:32px;background:#eaf4f7;border-top:3px solid var(--sky)}
+.escorts-services article:nth-child(2){background:#f4f5f7;border-color:var(--slate)}
+.escorts-services h3{font-size:24px;font-weight:400}
+.escorts-services p{font-size:15px;line-height:1.55;margin:0}
+.escorts-journey{border-top:1px solid #dddde5}
+.escorts-journey-heading{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.escorts-journey-heading p{margin:0}
+.escorts-stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:32px;counter-reset:journey}
+.escorts-stages article{counter-increment:journey;border-top:1px solid #dddde5;padding-top:20px}
+.escorts-stages article:before{content:counter(journey,decimal-leading-zero);display:block;color:var(--blue);font-size:14px;margin-bottom:14px}
+.escorts-stages p{font-size:15px;line-height:1.55;margin:0}
+@media(max-width:760px){.escorts-scope>div:first-child,.escorts-services,.escorts-journey-heading,.escorts-stages{grid-template-columns:1fr;gap:24px}.escorts-services article{padding:24px}}

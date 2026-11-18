@@ -1,0 +1,149 @@
+[
+  {
+    "source": "static/images/slider/winstar-guarding.jpg",
+    "output": "static/images/slider/winstar-guarding-anonymous.webp",
+    "face_regions": [
+      [
+        0.714,
+        0.18,
+        0.769,
+        0.292
+      ]
+    ],
+    "outside_faces_pixel_identical": true,
+    "exception": null
+  },
+  {
+    "source": "static/images/slider/winstar-site-security.jpg",
+    "output": "static/images/slider/winstar-site-security-anonymous.webp",
+    "face_regions": null,
+    "outside_faces_pixel_identical": false,
+    "exception": "Slide 2: car paint, face complexion, glasses and hair"
+  },
+  {
+    "source": "static/images/slider/winstar-response.jpg",
+    "output": "static/images/slider/winstar-response-anonymous.webp",
+    "face_regions": [
+      [
+        0.389,
+        0.325,
+        0.441,
+        0.416
+      ],
+      [
+        0.508,
+        0.302,
+        0.558,
+        0.408
+      ]
+    ],
+    "outside_faces_pixel_identical": true,
+    "exception": null
+  },
+  {
+    "source": "static/images/services/cctv-technician-remix.jpg",
+    "output": "static/images/services/cctv-technician-remix-anonymous.webp",
+    "face_regions": [
+      [
+        0.797,
+        0.239,
+        0.943,
+        0.6
+      ]
+    ],
+    "outside_faces_pixel_identical": true,
+    "exception": null
+  },
+  {
+    "source": "static/images/services/k9-search-remix.jpg",
+    "output": "static/images/services/k9-search-remix-anonymous.webp",
+    "face_regions": [
+      [
+        0.71,
+        0.164,
+        0.768,
+        0.307
+      ]
+    ],
+    "outside_faces_pixel_identical": true,
+    "exception": null
+  },
+  {
+    "source": "static/images/services/control-room-refined.jpg",
+    "output": "static/images/services/control-room-refined-anonymous.webp",
+    "face_regions": [
+      [
+        0.524,
+        0.155,
+        0.642,
+        0.397
+      ],
+      [
+        0.638,
+        0.194,
+        0.747,
+        0.431
+      ]
+    ],
+    "outside_faces_pixel_identical": true,
+    "exception": null
+  },
+  {
+    "source": "static/images/services/visitor-reception.jpg",
+    "output": "static/images/services/visitor-reception-anonymous.webp",
+    "face_regions": [
+      [
+        0.201,
+        0.169,
+        0.357,
+        0.418
+      ],
+      [
+        0.695,
+        0.283,
+        0.839,
+        0.511
+      ]
+    ],
+    "outside_faces_pixel_identical": true,
+    "exception": null
+  },
+  {
+    "source": "static/images/services/team-briefing.jpg",
+    "output": "static/images/services/team-briefing-anonymous.webp",
+    "face_regions": [
+      [
+        0.116,
+        0.054,
+        0.267,
+        0.29
+      ],
+      [
+        0.283,
+        0.246,
+        0.369,
+        0.382
+      ],
+      [
+        0.413,
+        0.219,
+        0.512,
+        0.393
+      ],
+      [
+        0.559,
+        0.218,
+        0.68,
+        0.383
+      ],
+      [
+        0.785,
+        0.075,
+        0.961,
+        0.351
+      ]
+    ],
+    "outside_faces_pixel_identical": true,
+    "exception": null
+  }
+]

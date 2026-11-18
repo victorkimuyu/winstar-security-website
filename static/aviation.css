@@ -1,0 +1,13 @@
+/* Retain the full square composition of the supplied profile illustration. */
+.aviation-page .entry-hero figure{aspect-ratio:1}
+.aviation-page .entry-hero .guarding-hero-grid{grid-template-columns:.85fr 1.3fr}
+.aviation-scope>div:first-child{max-width:720px;margin-bottom:36px}
+.aviation-duties{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 64px}
+.aviation-duties article{border-top:1px solid #dddde5;padding-top:24px}
+.aviation-duties p{font-size:15px;line-height:1.55;margin:0}
+.aviation-coordination{background:#eaf4f7}
+.aviation-coordination .delivery-heading{border:0;padding:0}
+.aviation-coordination .delivery-grid p{margin:0}
+.aviation-coordination .delivery-pillars article{border-color:#c6dbe5}
+.aviation-coordination .delivery-pillars p{line-height:1.55}
+@media(max-width:760px){.aviation-page .entry-hero .guarding-hero-grid,.aviation-duties{grid-template-columns:1fr;gap:28px}}

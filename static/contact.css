@@ -1,0 +1,17 @@
+.contact-intro{background:#f4f5f7;padding-block:36px 50px}
+.contact-intro h1{font-size:clamp(36px,4.3vw,56px);font-weight:300;line-height:1.08;margin:0 0 16px}
+.contact-intro p{font-size:20px;line-height:1.45;margin:0}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,64px);align-items:start}
+.contact-page .service-section{padding-block:52px}
+.contact-page .service-section h2{margin-bottom:18px}
+.contact-methods ul{list-style:none;padding:0;margin:0}
+.contact-methods li{border-bottom:1px solid #e4e7ed;padding:12px 0}
+.contact-methods a{font-size:clamp(16px,1.7vw,21px);text-underline-offset:.2em;overflow-wrap:anywhere}
+.contact-methods a:hover{color:var(--blue)}
+.contact-quote{background:#eaf4f7;padding:clamp(20px,3vw,36px)}
+.contact-quote p{margin:0 0 8px}
+.contact-quote ul{padding-left:20px;margin:0 0 24px;line-height:1.6}
+.contact-offices{background:#f4f5f7}
+.contact-offices h3{font-size:20px;font-weight:500;margin:0 0 9px}
+.contact-offices address{font-style:normal;line-height:1.55}
+@media(max-width:760px){.contact-grid{grid-template-columns:1fr}.contact-intro,.contact-page .service-section{padding-block:36px}.contact-intro p{font-size:18px}}

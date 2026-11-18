@@ -52,10 +52,10 @@ Company navigation should include About Winstar, Social Responsibility and Polic
 
 ### Service scope
 
-Manned Guarding; CCTV Security; Access Control (including bollards, turnstiles, barriers and card/biometric access); Alarm Monitoring & Response; Electric Fencing; Canine Security; Event Security; Security Escort (VIP and cargo); Aviation Security; Facility Management.
+Security Guards; CCTV Security; Access Control (including bollards, turnstiles, barriers and card/biometric access); Alarm Monitoring & Response; Electric Fencing; K9 Security Dogs; Event Security; Security Escort (VIP and cargo); Aviation Security; Facility Management.
 
 Agreed Services mega menu:
-- **Manned Security:** Manned Guarding; Canine Security; Event Security; VIP & Cargo Escorts; Aviation Security.
+- **Manned Security:** Security Guards; K9 Security Dogs; Event Security; VIP & Cargo Escorts; Aviation Security.
 - **Electronic Security:** CCTV Cameras & Surveillance; Biometric & Card-Based Access; Security Alarm Systems (installation, monitoring and response).
 - **Access Control:** one page covering turnstiles, bollards, vehicle barriers and related equipment; Electric Fencing as a separate page linked in this column.
 - No featured strip beneath the columns. Aviation Security and Electric Fencing retain their individual pages.
@@ -214,7 +214,7 @@ Group allocations follow the current navigation: Aviation Security is under Mann
 
 FAQ approach: keep broad selection, combining services, access-control distinctions and quote-preparation questions on the overview. Individual pages can answer focused questions about deployment, installation, operation and maintenance where useful and factually supported. Confirm Winstar-specific commitments before publishing; avoid invented response times, pricing, coverage or guarantees. Draft answers are for review.
 
-Next detailed page: Manned Guarding, establishing a reusable service-page structure. Review this overview before extending it.
+Next detailed page: Security Guards, establishing a reusable service-page structure. Review this overview before extending it.
 
 
 ## International research and proposed design philosophy — 16 October 2026
@@ -223,15 +223,30 @@ See [international design research](review/international-design-research.md) for
 
 Working principle: visible competence, clearly explained. Services describe scope and delivery; sector pages explain operating needs; Company substantiates organisational capacity. Prefer useful photography, restrained typography, consistent spacing and evidence near relevant claims. Retain the existing three service groups, header, footer and accepted homepage direction. General FAQs belong on the overview; specific practical questions belong on applicable service pages.
 
-Current implementation supersedes earlier design-history notes: Lab Grotesque is the body family, Integral CF remains a homepage accent, menu panels are solid desaturated navy/slate #39375b, and header contact details are removed. The shared footer and homepage are built drafts. Our Solutions is roughed out. Next proposed build is Manned Guarding to establish a reusable detailed-page template.
+Current implementation supersedes earlier design-history notes: Lab Grotesque is the body family, Integral CF remains a homepage accent, menu panels are solid desaturated navy/slate #39375b, and header contact details are removed. The shared footer and homepage are built drafts. Our Solutions is roughed out. Next proposed build is Security Guards to establish a reusable detailed-page template.
 
 
 ## Research applied to service pages — 16 October 2026
 
 Our Solutions now has an explicit page title and breadcrumb, three photographic groups using images from Winstar’s supplied profile, a contrasting panel explaining the relationship between security layers, general FAQs and an enquiry CTA. Existing groupings and all ten service links remain.
 
-Manned Guarding is the first detailed-page draft: introduction and photograph, section links, duties, delivery support, selected sectors, five specific FAQs, complementary services and enquiry. It shares `static/services.css` with the overview. Source for vetting, training, supervisory checks, control-room communication and written reporting: profile PDF page 6; account management: page 4; training/vetting also supported by notebook extraction page 4. Since 2001 follows the user’s confirmed professional operating date. Avoid stale headcounts, precise response-time guarantees and unverified performance claims.
+Security Guards is the first detailed-page draft: introduction and photograph, section links, duties, delivery support, selected sectors, five specific FAQs, complementary services and enquiry. It shares `static/services.css` with the overview. Source for vetting, training, supervisory checks, control-room communication and written reporting: profile PDF page 6; account management: page 4; training/vetting also supported by notebook extraction page 4. Since 2001 follows the user’s confirmed professional operating date. Avoid stale headcounts, precise response-time guarantees and unverified performance claims.
 
 Photographs are extracted from profile PDF pages 6, 11 and 13; provenance is recorded in `static/images/services/sources.md`. All remain subject to final publication review. No invented customer evidence is added.
 
 Homepage judgement: retain the established structure and design. The immediate priority is reviewing this service-page template, followed by consistent rollout. Later homepage improvements should prioritise authentic service photography and verified testimonials over structural redesign. Browser visual review remains pending because local-file preview was blocked; local link, asset, heading and fragment checks passed.
+
+
+Design refinement: omit eyebrow/kicker text across all pages. Use the main section headings directly. Standalone section labels such as Trusted by and navigation breadcrumbs remain.
+
+## CCTV Cameras & Surveillance — 18 October 2026
+
+The electronic-security service-page draft now follows the shared detail-page language: photographic introduction, coverage planning, camera formats and night visibility, monitoring/integration, installation and support, recording/access, focused FAQs and enquiry. Use Winstar's installation photograph from the profile. Camera selection is explained through site needs rather than a product-price catalogue.
+
+The director's AI-augmentation confirmation is represented as a supporting capability. Analytics, alarm triggers and monitoring arrangements depend on the specified equipment and agreed service scope. Avoid guaranteed elimination of blind spots, universal continuous monitoring, invented response times and unverified manufacturer partnerships. Sources and operational review points are recorded in [CCTV content research](review/cctv-content-research.md). This is a reviewable content/design draft; final operational approval and browser visual review remain pending.
+
+## Alarm systems research and proposed structure — 21 October 2026
+
+Research and a proposed content plan are recorded in [Alarm systems research and content plan](review/alarm-systems-research-and-content-plan.md). Proposed positioning brings alarm installation, monitoring and mobile response together on the existing service page, with rapid response receiving strong visual emphasis. Proposed sequence: hero; intruder/panic/perimeter alarm options; monitoring and response panel with a four-stage service diagram; compact system-design/support assurances; focused FAQs; enquiry CTA. This is a recommendation for discussion, not an approved page build or navigation rename. Current coverage, monitoring arrangements, equipment features and service inclusions need confirmation before publication copy.
+
+Implementation update: the user authorised proceeding with common Kenyan alarm-service practices and excluding exotic or unusually specific features. `security-alarm-systems.html` is now built with a photographic hero, three practical alarm options, a slate monitoring/response panel and four-stage response sequence, pale-blue design/support assurances, four FAQs and the shared quote CTA. Copy totals approximately 440 words including headings and navigation within the main content. Photos come from the supplied profile's alarm and escort pages. Dedicated page styles are in `static/alarms.css`; header, navigation and footer are retained. No new service pages or menu labels were introduced. Structural and asset checks passed; browser visual/keyboard review remains pending.

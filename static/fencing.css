@@ -1,0 +1,11 @@
+/* Preserve the profile photograph's technician and boundary detail. */
+.fencing-page .entry-hero figure{aspect-ratio:1.2}
+.fencing-page .entry-hero figure img{object-position:center bottom}
+.fencing-scope>div:first-child{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:32px}
+.fencing-scope>div:first-child p{margin:0}
+.fencing-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.fencing-options article{padding:28px;background:#eaf4f7}
+.fencing-options h3{font-size:22px;font-weight:400}
+.fencing-options p{font-size:15px;line-height:1.55;margin:0}
+.fencing-options article:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 2fr;gap:32px;background:none;border-top:1px solid #dddde5;padding:28px 0 0}
+@media(max-width:760px){.fencing-scope>div:first-child,.fencing-options,.fencing-options article:last-child{grid-template-columns:1fr;gap:24px}}

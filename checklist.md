@@ -1,8 +1,28 @@
 # Winstar Website Checklist
 
+## Photography review — 18 November 2026
+
+- [x] Replace identifiable faces in eight active photo-derived assets; preserve outside-face content and Winstar vehicles. Apply the requested blue visitor-car and hairstyle/glasses changes on slide 2.
+
+- [x] Review both new Resized folders (204 images) and build contact sheets.
+- [x] Shortlist 20 candidates with page placement, dimensions and editing recommendations in `review/photo-scout/shortlist.html`.
+- [x] Document priority replacements and coverage gaps in `review/photo-scout/recommendations.md`.
+- [x] Prepare edited homepage slider photographs and compare desktop/mobile focal crops.
+- [x] Apply selected derivatives to Home, Security Guards, K9, CCTV, Alarms supporting content, Escorts and the Solutions overview.
+- [x] Check affected page structure, local image references and stylesheet structure.
+- [ ] Complete live browser review of text overlays, slider zoom and responsive compositions.
+
 Living implementation checklist. Strategy and agreed content requirements are in `website-blueprint.md`. Check an item only when its deliverable is complete; expand page checklists as their structures are agreed.
 
 ## Planning
+
+### Service-page presentation variations
+
+- [x] Event Security: before/during/after sequence followed by a two-by-two service grid.
+- [x] VIP & Cargo Escorts: equal service panels and an open journey sequence.
+- [x] Aviation Security: larger hero image, open duties grid and pale coordination panel.
+- [x] Electric Fencing: paired installation options and a separate compact repairs row.
+- [ ] Review these variations visually on desktop and mobile; add approved service-specific imagery during refinement.
 
 - [x] Record agreed purpose, audiences and positioning.
 - [x] Record main navigation and broad page map.
@@ -59,9 +79,47 @@ Header and navigation are accepted as the current baseline; continue refinements
 - [x] Replace overview stock placeholders with relevant photography extracted from the supplied Winstar profile (publication review pending).
 - [ ] Confirm service descriptions and FAQ wording with Winstar.
 - [ ] Verify desktop/mobile presentation and keyboard interactions in browser.
-- [x] Develop Manned Guarding as the first individual service-page template; user and browser review pending.
+- [x] Develop Security Guards as the first individual service-page template; user and browser review pending.
 - [ ] Add focused FAQs where they answer useful service-specific questions; avoid duplicating overview FAQs.
 - [ ] Build remaining individual service pages after template agreement.
+
+## Electric Fencing — first detailed-page draft
+
+- [x] Ground service scope in Winstar's profile and notebook; check common equipment features against manufacturer guidance.
+- [x] Build a photographic introduction with a concise lead and quote CTA.
+- [x] Explain wall-top fencing, freestanding fencing and repairs/upgrades using active service descriptions.
+- [x] Add integrated monitoring/response, installation and maintenance content.
+- [x] Add four focused FAQs and closing enquiry CTA.
+- [x] Reuse established service layouts and muted Alumni Sans numbering.
+- [ ] Review desktop/mobile presentation, photograph crop and keyboard interaction.
+- [ ] Approve final wording with Winstar.
+
+## Event Security — first detailed-page draft
+
+- [x] Research Kenyan and international providers; record findings in `review/event-security-content-research.md`.
+- [x] Build photographic hero, four service descriptions and a before/during/after delivery panel.
+- [x] Add four focused FAQs and quote CTA using established service patterns.
+- [x] Use active, concise service language and avoid unsupported specialist claims.
+- [ ] Review desktop/mobile layout, photograph crop and keyboard interaction.
+- [ ] Confirm final assignment scope and select event-specific photography with Winstar.
+
+## VIP & Cargo Escorts — first detailed-page draft
+
+- [x] Ground VIP protection and cargo monitoring claims in the company profile; record comparator sources.
+- [x] Build photographic hero and separate VIP/personal protection and cargo escort descriptions.
+- [x] Add preparation, movement coordination and arrival/handover content.
+- [x] Add four focused FAQs and quote CTA using established service patterns.
+- [ ] Review desktop/mobile presentation and keyboard interaction.
+- [ ] Approve final wording and assignment scope with Winstar.
+
+## Aviation Security — first detailed-page draft
+
+- [x] Ground scope in Winstar's profile and compare international aviation providers.
+- [x] Build hero, four duty descriptions, operational support panel, four FAQs and quote CTA.
+- [x] Extract supplied aviation illustration and record provenance.
+- [x] Distinguish screening-area support from equipment operation; avoid unsupported certification claims.
+- [ ] Review desktop/mobile presentation and keyboard interaction.
+- [ ] Approve final operational scope and imagery with Winstar.
 
 ## Sectors
 
@@ -94,9 +152,18 @@ Header and navigation are accepted as the current baseline; continue refinements
 
 ## Contact Us
 
-- [ ] Confirm office details and enquiry/support contacts.
-- [ ] Agree structure and form requirements; add detailed checklist.
-- [ ] Build and verify page and enquiry handling.
+- [x] Build the contact page using the established office details and enquiry contacts.
+- [x] Verify both phone links and the prefilled quote email destination and content.
+- [ ] Review desktop/mobile layout and verify opening the quote email in a configured mail app.
+- [ ] Decide whether to add a hosted contact form in a later pass.
+
+## Turnstiles, Bollards & Barriers — first draft
+
+- [x] Build equipment overview, entry-planning section, installation/support section, four FAQs and quote CTA.
+- [x] Ground the scope in Winstar material and manufacturer guidance; record sources in `review/physical-access-content-notes.md`.
+- [ ] Review the layout and add approved product photography during refinement.
+- [x] Refine Access Control against older service pages: photographic hero, split equipment scope, one integrated delivery panel and shared FAQ/CTA treatments.
+- [x] Refine Access Control against older service pages: photographic hero, split equipment scope, one integrated delivery panel and shared FAQ/CTA treatments.
 
 ## Footer policy pages
 
@@ -135,12 +202,12 @@ Careers is excluded from current scope.
 - [x] Inspect selected desktop visual references and retain research screenshots.
 - [x] Document proposed content philosophy, page families, styling rules and photography brief.
 - [ ] Review and settle the proposed philosophy with user.
-- [ ] Implement and review the Manned Guarding template against this brief.
+- [ ] Implement and review the Security Guards template against this brief.
 - [x] Share internal-page styles, FAQs and CTA treatment across overview and guarding drafts; refine after visual review.
-- [ ] Test the pattern on Canine Security and an electronic service before wider rollout.
+- [ ] Test the pattern on K9 Security Dogs and an electronic service before wider rollout.
 
 
-## Manned Guarding — first detailed-page draft
+## Security Guards — first detailed-page draft
 
 - [x] Breadcrumb, service title, introduction, profile photograph and quote CTA.
 - [x] On-page links to scope, delivery, settings and FAQs.
@@ -154,3 +221,29 @@ Careers is excluded from current scope.
 - [ ] Approve wording against current operational practice.
 
 Local-file browser preview was blocked by browser policy during this pass. Structural checks passed; visual checks are still pending. Homepage retained: the research supports its existing structure. Future homepage refinement should focus on approved operational photography and genuine testimonials.
+
+## CCTV Cameras & Surveillance — detailed-page draft
+
+- [x] Research Kenyan comparators and camera-manufacturer guidance; record sources in `review/cctv-content-research.md`.
+- [x] Build photograph-led introduction, breadcrumb, quote CTA and section navigation.
+- [x] Explain site surveys, coverage, blind spots and camera selection.
+- [x] Cover dome/turret, bullet, PTZ and panoramic options; explain infrared and low-light performance.
+- [x] Include a balanced AI-assisted surveillance section, control-room support and selected alarm triggers.
+- [x] Describe installation, handover, maintenance scope, recording and authorised access.
+- [x] Add six practical FAQs, complementary services and closing enquiry CTA.
+- [x] Check local links/assets, unique IDs, section targets, heading order, image alternatives and FAQ markup; whitespace checks passed.
+- [ ] Complete desktop/mobile visual review and keyboard interaction checks.
+- [ ] Confirm equipment, analytics, monitoring, integration and support scope with Winstar before publication.
+
+## Security Alarm Systems — first detailed-page draft
+
+- [x] Compare Kenyan providers and international monitoring/response services.
+- [x] Cross-check supplied Winstar material and manufacturer guidance.
+- [x] Prepare a concise proposed page structure, imagery direction and source notes in `review/alarm-systems-research-and-content-plan.md`.
+- [x] Proceed with the user's approved common-practice scope: intruder/panic alarms, connected perimeter protection, control-room monitoring and mobile response.
+- [x] Build the hero, three alarm options, monitoring/response panel, four-stage response sequence, installation/support assurances, four FAQs and quote CTA.
+- [x] Use Winstar photographs extracted from profile PDF pages 7 and 9; record provenance.
+- [x] Keep copy concise and omit specialist apps, model-specific features, pricing tiers and guaranteed response times.
+- [x] Check HTML nesting, heading hierarchy, local assets/links, image dimensions/alternatives, unique IDs and FAQ structure; whitespace checks passed.
+- [ ] Review desktop/mobile layout, photographic crops and keyboard interaction in browser.
+- [ ] Review the completed design and copy with the user.

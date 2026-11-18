@@ -1,0 +1,36 @@
+/* Shared photo hero, split service scope and slate delivery panel. */
+.entry-hero .guarding-hero-grid{grid-template-columns:1fr 1.15fr;gap:clamp(32px,5vw,72px)}
+.entry-hero .guarding-standfirst{font-size:clamp(22px,2.2vw,28px);line-height:1.3;max-width:30ch}
+.entry-hero figure{height:auto;aspect-ratio:1.45}
+.entry-hero figure img{display:block;object-position:center}
+.entry-page .service-section{padding-block:56px}
+.entry-options{align-items:start}
+.entry-options>div>p{max-width:38ch;font-size:16px;line-height:1.55;margin:0}
+.entry-options-grid{display:grid;gap:24px}
+.entry-options-grid article{display:grid;grid-template-columns:52px minmax(0,1fr);column-gap:20px;border-top:1px solid #dddde5;padding-top:24px}
+.entry-options-grid article:first-child{border-top:0;padding-top:0}
+.entry-options-grid article>span{grid-row:1/3;align-self:start;color:#9bbdce;font-family:"Alumni Sans","Arial Narrow",sans-serif;font-size:68px;font-weight:500;line-height:1;margin-top:-.12em;font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.025em}
+@supports(text-box-trim:trim-both){
+.entry-options-grid article>span,.entry-options-grid h3{text-box-trim:trim-both;text-box-edge:cap alphabetic}
+.entry-options-grid article>span{margin-top:0}
+}
+.entry-page h3{font-size:18px;font-weight:500;line-height:1.25;margin:0 0 12px}
+.entry-options-grid p{font-size:15px;line-height:1.55;margin:0}
+.entry-delivery h2{color:var(--sky);margin-bottom:0}
+.entry-delivery .delivery-grid{align-items:center}
+.entry-delivery .delivery-grid p{margin:0;line-height:1.55}
+.entry-delivery .delivery-pillars p{line-height:1.55}
+.entry-delivery a{color:var(--sky);text-underline-offset:.2em}
+.entry-delivery a:focus-visible{outline-color:var(--sky)}
+.entry-page .solutions-faq h2{max-width:13ch}
+.entry-page .solutions-questions summary{font-size:16px;padding-block:20px}
+.entry-page .solutions-questions details p{font-size:14px;line-height:1.55;padding-bottom:20px}
+@media(max-width:760px){
+.entry-hero .guarding-hero-grid{grid-template-columns:1fr;gap:30px}
+.entry-hero figure{height:auto;aspect-ratio:1.5}
+.entry-page .service-section{padding-block:40px}
+.entry-options>div>p{max-width:none}
+.entry-options-grid article{grid-template-columns:44px minmax(0,1fr);column-gap:18px}
+.entry-options-grid article>span{font-size:56px}
+.entry-page .solutions-faq h2{max-width:none}
+}

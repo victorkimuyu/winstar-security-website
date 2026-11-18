@@ -18,7 +18,7 @@ panel = '''    <section class="experience-panel" aria-labelledby="experience-tit
         <div class="experience-intro">
           <div class="experience-image"><img src="static/images/slider/corporate-building.jpg" alt="" loading="lazy"></div>
           <div class="experience-text">
-          <div><p class="experience-kicker">EXPERIENCE &amp; SECTOR EXPERTISE</p>
+          <div>
           <h2 id="experience-title">Diverse environments.<br>One commitment to protection.</h2></div>
           <div class="experience-copy"><p>Providing professional security solutions since 2001, Winstar understands that each environment brings its own priorities. We shape protection around the people, premises and daily activities that make your operation unique.</p>
           <a class="overview-cta" href="sectors.html">Who We Serve <img src="static/images/icons/chevron-right.svg" width="18" height="18" alt="" aria-hidden="true"></a></div>

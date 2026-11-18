@@ -12,9 +12,9 @@
 .solution-card{min-width:0;border-bottom:3px solid #e6e7ec}
 .solution-photo{position:relative;overflow:hidden;aspect-ratio:1.65;background:#ededf1}
 .solution-photo img{display:block;width:100%;height:100%;object-fit:cover}
-.solution-photo>span{position:absolute;bottom:0;left:0;background:var(--red);color:white;padding:10px 15px;font-size:13px}
-.solution-card-body{padding:28px 0 22px}
-.solution-card h2{font-weight:500;font-size:26px;margin:0 0 20px;line-height:1.2}
+.solution-photo>span{position:absolute;top:0;left:0;background:none;color:white;opacity:.4;padding:10px 15px;font-size:48px;font-weight:500;line-height:1}
+.solution-card-body{padding:0 0 22px}
+.solution-card h2{--heading-bevel:calc(1lh + 20px);font-weight:500;font-size:16px;margin:0 0 20px;line-height:1.2;padding:10px 16px;background:var(--red);color:#fff;clip-path:polygon(0 0,100% 0,calc(100% - var(--heading-bevel)) 100%,0 100%)}
 .solution-card p{font-size:15px;line-height:1.65;margin:0 0 22px}
 .solution-card .solution-lead{font-weight:500;margin-bottom:10px}
 .solution-card ul{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid #e6e7ec}
@@ -42,7 +42,7 @@
 .solutions-cta:hover:before,.solutions-cta:focus-visible:before{width:100%}
 .solutions-cta:hover,.solutions-cta:focus-visible{color:white}
 .solutions-page+.site-footer{margin-top:0}
-@media(max-width:1000px){.solutions-intro-grid,.solutions-faq-grid{gap:40px}.solutions-catalogue{gap:22px}.solution-card h2{font-size:23px}}
+@media(max-width:1000px){.solutions-intro-grid,.solutions-faq-grid{gap:40px}.solutions-catalogue{gap:22px}.solution-card h2{font-size:16px}}
 @media(max-width:760px){.solutions-intro{padding:44px 0}.solutions-intro-grid,.solutions-faq-grid{grid-template-columns:1fr;gap:28px}.solutions-catalogue{grid-template-columns:1fr;padding-block:36px 48px;gap:40px}.solution-photo{aspect-ratio:1.9}.solutions-faq{padding:44px 0}.solutions-enquiry{align-items:flex-start;flex-direction:column;padding-block:44px}.solutions-faq-grid>div>p:last-child{max-width:100%}.solutions-intro h1{letter-spacing:-.7px}}
 @media(prefers-reduced-motion:reduce){.solutions-cta:before{transition:none}}
 
@@ -91,3 +91,37 @@
 .guarding-page section[id]{scroll-margin-top:24px}
 @media(max-width:1000px){.guarding-hero-grid,.scope-grid,.settings-grid,.delivery-grid{gap:40px}.guarding-hero figure{height:400px}}
 @media(max-width:760px){.guarding-hero-grid,.scope-grid,.settings-grid,.delivery-grid{grid-template-columns:1fr;gap:32px}.guarding-hero{padding:28px 0 40px}.guarding-hero figure{height:360px}.delivery-band{padding:44px 0}.delivery-pillars{grid-template-columns:1fr;gap:24px;margin-top:30px}.service-section{padding-block:44px}.page-breadcrumb{margin-bottom:28px}.service-section-nav>div{gap:12px 24px}.delivery-heading{padding-left:20px}.solutions-cta{white-space:normal}.solutions-cta img{flex-shrink:0}}
+
+/* Solutions overview: overlapping catalogue and contrasting FAQ panel. */
+.solutions-overview-page .solutions-intro{padding-bottom:144px;border-bottom:0}
+.solutions-overview-page .solutions-catalogue{position:relative;z-index:1;margin-top:-80px;padding-top:0;padding-bottom:0}
+.solutions-overview-page .solutions-faq{background:var(--slate);color:#fff}
+.solutions-overview-page .solutions-faq h2{color:var(--sky)}
+.solutions-overview-page .solutions-faq .solutions-eyebrow,
+.solutions-overview-page .solutions-questions summary span{color:#fff}
+.solutions-overview-page .solutions-questions details{border-color:rgba(255,255,255,.4)}
+.solutions-overview-page .solutions-questions summary:focus-visible{outline-color:#fff}
+@media(max-width:760px){
+.solutions-overview-page .solutions-intro{padding-bottom:92px}
+.solutions-overview-page .solutions-catalogue{margin-top:-48px;padding-top:0}
+}
+
+/* Solid intro surface gives the overlapping photographs a clear backdrop. */
+.solutions-overview-page .solutions-intro{background:var(--slate);color:#fff}
+.solutions-overview-page .solutions-intro h1{color:#fff}
+.solutions-overview-page .solutions-intro .page-title-support{color:var(--sky)}
+.solutions-overview-page .solutions-intro .page-breadcrumb{color:#e1e0ec}
+.solutions-overview-page .solutions-intro .page-breadcrumb a:hover,
+.solutions-overview-page .solutions-intro .solutions-text-link:hover{color:var(--sky)}
+.solutions-overview-page .solutions-intro a:focus-visible{outline-color:var(--sky)}
+
+/* Overview delivery section uses the open page background. */
+.solutions-overview-page .delivery-band{background:none;color:var(--slate)}
+.solutions-overview-page .delivery-band .solutions-eyebrow{color:var(--blue)}
+.solutions-overview-page .delivery-band p:not(.solutions-eyebrow),
+.solutions-overview-page .delivery-band .solutions-text-link{color:var(--slate)}
+.solutions-overview-page .delivery-band .solutions-text-link:hover{color:var(--red)}
+
+.solutions-overview-page .delivery-band h2{color:var(--red)}
+
+@supports(corner-shape:bevel){.solution-card h2{clip-path:none;border-bottom-right-radius:var(--heading-bevel);corner-bottom-right-shape:bevel}}

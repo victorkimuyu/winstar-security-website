@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&display=swap");
+
+/* Shared display treatment for section and process numbering. */
+:root{--section-number-size:56px}
+.solution-photo>span,
+.scope-list article>span,
+.alarm-option-number,
+.entry-options-grid article>span,
+.cctv-process li::before,
+.escorts-stages article::before,
+.credential-process li::before{
+  font-family:"Alumni Sans","Arial Narrow",sans-serif;
+  font-size:var(--section-number-size);
+  font-weight:500;
+  line-height:1;
+  letter-spacing:-.025em;
+  font-variant-numeric:lining-nums tabular-nums;
+  color:var(--red);
+  opacity:1;
+}
+.scope-list article>span{flex-shrink:0;min-width:40px;padding-top:0}
+.entry-options-grid article>span{margin-top:0}
+.credential-process ol{list-style:none;counter-reset:entry-step;padding-left:0}
+.credential-process li{counter-increment:entry-step;padding-left:0}
+.credential-process li::before{content:counter(entry-step,decimal-leading-zero);display:block;margin-bottom:16px}

@@ -20,4 +20,154 @@
 .credential-grid p{margin:0;font-size:15px;line-height:1.55}
 .credential-delivery h2{color:var(--sky)}
 .credential-delivery a{color:var(--sky);text-underline-offset:.2em}
+
+.credential-page {
+  --credential-underlap: clamp(260px, 25vw, 360px);
+  --credential-options-inset: clamp(96px, 9vw, 135px);
+  --credential-options-overlap: 100px;
+  --credential-fade-blue: 6 17 34;
+}
+
+.credential-intro {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  background: var(--slate);
+}
+
+.credential-intro-photo {
+  position: absolute;
+  grid-area: 1 / 1 / 4 / 2;
+  inset: 0;
+  margin: 0;
+  z-index: -1;
+  background: rgb(var(--credential-fade-blue));
+}
+
+.credential-intro-photo img {
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: 65% top;
+}
+
+.credential-mobile-photo-space { grid-row: 2; }
+.solutions-page.credential-page .guarding-hero {
+  grid-row: 1;
+  display: flex;
+  align-items: stretch;
+  min-height: 360px;
+  padding-block: 28px;
+  overflow: visible;
+  background: transparent;
+}
+.credential-page .guarding-hero > .solutions-container {
+  display: flex;
+  flex-direction: column;
+}
+.credential-page .guarding-hero .guarding-hero-grid {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.credential-page .guarding-hero .guarding-hero-copy { padding-top: 0; }
+.credential-page .guarding-hero .page-breadcrumb { margin-bottom: 20px; }
+
+.credential-page .guarding-hero::after {
+  bottom: calc(-1 * var(--credential-underlap));
+  mask-image: linear-gradient(to bottom, #000 calc(100% - var(--credential-underlap)), transparent);
+}
+
+.credential-page .credential-options {
+  grid-row: 3;
+  position: relative;
+  margin-top: calc(-1 * var(--credential-options-overlap));
+  padding-block: var(--credential-options-inset) clamp(32px, 4vw, 52px);
+  color: #f4f6fb;
+  background: linear-gradient(to bottom,
+    rgb(var(--credential-fade-blue) / 0) 0%,
+    rgb(var(--credential-fade-blue) / .78) 34%,
+    rgb(var(--credential-fade-blue)) 90%);
+}
+
+.credential-options::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  background: linear-gradient(to bottom,
+    rgb(var(--credential-fade-blue) / 0) 0%,
+    rgb(var(--credential-fade-blue) / .27) 35%,
+    rgb(var(--credential-fade-blue) / 0) 90%);
+}
+
+.credential-options-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
+  gap: clamp(30px, 7vw, 94px);
+}
+
+.credential-options-intro {
+  border-left: 4px solid var(--red);
+  padding-left: clamp(18px, 3vw, 34px);
+}
+.credential-options-intro p {
+  max-width: 30ch;
+  margin: 0;
+  color: var(--sky);
+  font-size: clamp(21px, 2.2vw, 28px);
+  line-height: 1.35;
+}
+.credential-options-list article + article {
+  border-top: 1px solid #ffffff40;
+  padding-top: 22px;
+  margin-top: 22px;
+}
+.credential-options-list h3 {
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+.credential-options-list .credential-biometric-option h3 {
+  font-size: clamp(18px, 2vw, 24px);
+}
+.credential-options-list p { margin: 0; }
+
+.credential-page .credential-process { padding-block: clamp(40px, 6vw, 72px); }
+.credential-process li { border-top: 1px solid #d7d8e1; padding-top: 18px; }
+.credential-process strong { font-size: 18px; font-weight: 500; }
+.credential-page .solutions-faq { background: #fff; }
+.credential-page .credential-enquiry {
+  background: #eaf4f7;
+  border-left: 4px solid var(--red);
+  margin-bottom: clamp(36px, 6vw, 72px);
+  padding: clamp(24px, 4vw, 48px);
+}
+.credential-enquiry h2 { margin-bottom: 12px; }
+
+@media (max-width: 760px) {
+  .credential-page {
+    --credential-underlap: clamp(220px, 38vw, 285px);
+    --credential-options-inset: 74px;
+    --credential-options-overlap: 60px;
+  }
+  .credential-options-layout { grid-template-columns: 1fr; }
+  .solutions-page.credential-page .guarding-hero {
+    min-height: 265px;
+    padding-block: 24px;
+    background: var(--slate);
+  }
+  .credential-mobile-photo-space { aspect-ratio: 1.9; }
+  .credential-intro-photo { grid-row-start: 2; }
+  .credential-intro-photo img {
+    object-position: 59% top;
+  }
+  .credential-page .guarding-hero::after { content: none; }
+}
 @media(max-width:760px){.credential-hero{padding-block:28px 40px}.credential-hero-grid,.credential-grid{grid-template-columns:1fr}.credential-hero p{font-size:18px}}

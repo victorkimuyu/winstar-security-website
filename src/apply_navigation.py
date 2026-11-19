@@ -11,14 +11,13 @@ groups = {
     'Access Control': [('access-control.html','Turnstiles, Bollards & Barriers'),('electric-fencing.html','Electric Fencing')],
 }
 sectors = [
-    ('banking-financial.html','Banking & Financial','Security for financial institutions.'),
-    ('hotel-recreation.html','Hotel & Recreation','Protection with a welcoming presence.'),
-    ('real-estate-domestic.html','Real Estate & Domestic','Security for properties and homes.'),
-    ('education.html','Education','Safer learning environments.'),
-    ('aviation-travel.html','Aviation & Travel','Security for aviation and travel operations.'),
-    ('logistics-warehousing.html','Logistics & Warehousing','Protection for goods, sites and movements.'),
+    ('sectors.html#banking-financial','Banking & Financial','Security for financial institutions.'),
+    ('sectors.html#hotel-recreation','Hotel & Recreation','Protection with a welcoming presence.'),
+    ('sectors.html#real-estate-domestic','Real Estate & Domestic','Security for properties and homes.'),
+    ('sectors.html#education','Education','Safer learning environments.'),
+    ('sectors.html#aviation-travel','Aviation & Travel','Security for aviation and travel operations.'),
+    ('sectors.html#logistics-warehousing','Logistics & Warehousing','Protection for goods, sites and movements.'),
 ]
-company = [('about_us.html','About Winstar'),('social-responsibility.html','Social Responsibility'),('policies-commitments.html','Policies & Commitments')]
 service_files = {file for items in groups.values() for file,_ in items} | {'services.html','electric-fencing.html','aviation-security.html'}
 sector_files = {file for file,_,_ in sectors} | {'sectors.html'}
 
@@ -36,7 +35,6 @@ def service_link(file, label, current):
 def header(current):
     columns = ''.join('<section class="menu-group"><div class="solution-image-placeholder" aria-hidden="true"></div><h2>'+escape(title)+'</h2><ul>'+''.join('<li>'+service_link(file,label,current)+'</li>' for file,label in items)+'</ul></section>' for title,items in groups.items())
     sector_links = ''.join(f'<a class="sector-link" href="{file}"'+(' aria-current="page"' if file==current else '')+f'><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>{escape(title)}</span>{arrow()}</strong><span>{escape(description)}</span></div></a>' for file,title,description in sectors)
-    company_links = ''.join('<li>'+link(file,label,current)+'</li>' for file,label in company)
     return f'''  <header class="site-header">
 
     <div class="navigation-row"><div class="nav-shell">
@@ -58,12 +56,9 @@ def header(current):
             <div class="sector-grid">{sector_links}</div>
           </div>
         </details>
-        <details class="menu{' is-current' if current in dict(company) else ''}">
-          <summary>COMPANY <span class="chevron" aria-hidden="true"></span></summary>
-          <div class="menu-panel company-panel"><ul>{company_links}</ul></div>
-        </details>
+        {link('about_us.html','ABOUT US',current,'nav-link')}
         {link('contact_us.html','CONTACT US',current,'nav-link')}
-        <a class="quote-button" href="contact_us.html?enquiry=quote">REQUEST FOR QUOTE</a>
+        <a class="quote-button" href="contact_us.html#contact-form">REQUEST FOR QUOTE</a>
 
       </nav>
     </div></div>
@@ -78,5 +73,7 @@ for filename in PAGES:
         text = text.replace('</head>', '  <link rel="icon" href="favicon.svg" type="image/svg+xml">\n  <link rel="stylesheet" href="static/navigation.css">\n  <script src="static/navigation.js" defer></script>\n</head>')
     if 'static/typography.css' not in text:
         text = text.replace('</head>', '  <link rel="stylesheet" href="static/typography.css">\n</head>')
+    if 'static/motion.js' not in text:
+        text = text.replace('</head>', '  <link rel="stylesheet" href="static/motion.css">\n  <script src="static/motion.js" defer></script>\n</head>')
     path.write_text(text, encoding='utf-8')
 print(f'Applied shared navigation to {len(PAGES)} pages.')

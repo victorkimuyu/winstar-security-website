@@ -3,3 +3,20 @@
 @font-face{font-family:"Lab Grotesque";src:url("fonts/LabGrotesque-Web/LabGrotesque-Medium.woff2") format("woff2");font-style:normal;font-weight:500;font-display:swap}
 @font-face{font-family:"Lab Grotesque";src:url("fonts/LabGrotesque-Web/LabGrotesque-Bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
 @font-face{font-family:"Lab Grotesque";src:url("fonts/LabGrotesque-Web/LabGrotesque-Black.woff2") format("woff2");font-style:normal;font-weight:900;font-display:swap}
+
+:root {
+  --hero-title-size: clamp(2rem, 4vw, 3rem);
+  --hero-lead-size: clamp(1rem, .875rem + .4vw, 1.125rem);
+}
+
+#main-content h1,
+#main-content .hero-content h2,
+.thanks-page .thanks-panel h1 {
+  font-size: var(--hero-title-size);
+}
+
+#main-content :is(.hero-description, .guarding-standfirst, .company-lead),
+#main-content :is(.sectors-intro, .contact-intro, .solutions-intro-grid) p,
+.thanks-page .thanks-panel > p {
+  font-size: var(--hero-lead-size);
+}

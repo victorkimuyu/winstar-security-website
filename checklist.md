@@ -38,7 +38,7 @@ Living implementation checklist. Strategy and agreed content requirements are in
 - [x] Build desktop navigation.
 - [x] Build Services mega menu.
 - [x] Build Sectors mega menu.
-- [x] Build Company dropdown.
+- [x] Link ABOUT US directly to the company profile.
 - [x] Build mobile navigation and keyboard interactions.
 - [x] Place Request for Quote CTA at far right on desktop.
 - [x] Build shared footer, including Data Protection Policy, Privacy Notice and Terms of Use links.
@@ -125,14 +125,15 @@ Header and navigation are accepted as the current baseline; continue refinements
 
 - [ ] Agree overview-page structure and content.
 - [ ] Add section-level checklist after agreement.
-- [ ] Agree individual sector-page structure and content.
-- [ ] Build and verify agreed pages.
+- [x] Consolidate all six sectors on Who We Serve and link the existing mega menu to their sections.
+- [x] Redirect the former sector pages to their sections.
 
 ## Company / About Winstar
 
-- [ ] Agree structure and content.
-- [ ] Add section-level checklist after agreement.
-- [ ] Build and verify page.
+- [x] Build company introduction and regional presence section.
+- [x] Explain guard training, supervision and control room support.
+- [x] Add Winstar photography, client commitments and contact link.
+- [ ] Review page design and copy for publication.
 
 ## Social Responsibility
 

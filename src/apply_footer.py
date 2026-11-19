@@ -33,8 +33,6 @@ footer = f'''  <footer class="site-footer">
         <ul>
           <li><a href="about_us.html">About Winstar</a></li>
           <li><a href="sectors.html">Who We Serve</a></li>
-          <li><a href="social-responsibility.html">Social Responsibility</a></li>
-          <li><a href="policies-commitments.html">Policies &amp; Commitments</a></li>
           <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
       </nav>

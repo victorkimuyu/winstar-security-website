@@ -22,12 +22,21 @@
 .alarms-response-copy>p{color:#efeff5;max-width:45ch;margin:0;line-height:1.6}
 .alarms-response-photo{position:absolute;inset:0;z-index:-2;margin:0;overflow:hidden}
 .alarms-response-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%}
-.alarms-response-band{background:rgba(25,28,54,.76);border-top:1px solid #ffffff25;padding-block:32px}
+.alarms-response-band{background:rgba(25,28,54,.76);border-top:1px solid #ffffff25;padding-block:32px clamp(56px,6vw,80px)}
 .alarms-response-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:56px;list-style:none;padding:0;margin:0}
 .alarms-response-steps li{min-width:0;position:relative}
 .response-step-chevron{position:absolute;right:-40px;top:50%;display:block;width:24px;height:24px;transform:translateY(-50%);color:var(--sky)}
 .alarms-response-steps p{font-size:14px;line-height:1.45;color:#efeff5;max-width:28ch;margin:0}
-.alarms-assurance{background:#eaf4f7}
+.alarms-assurance{position:relative;background:#eaf4f7}
+.alarms-assurance > .solutions-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 10px;
+  background: var(--red);
+  transform: translateY(-50%);
+}
 .alarms-assurance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
 .alarms-assurance-grid p{font-size:14px;line-height:1.5;margin:0;max-width:40ch}
 .alarms-page .solutions-faq{background:#fff;padding-block:56px}

@@ -9,14 +9,16 @@
   <script src="static/navigation.js" defer></script>
   <link rel="stylesheet" href="static/footer.css">
   <link rel="stylesheet" href="static/typography.css">
+  <link rel="stylesheet" href="static/motion.css">
+  <script src="static/motion.js" defer></script>
   <meta name="description" content="Winstar aviation security personnel support airport entrances, gates and screening areas with attentive access control, passenger assistance and operational coordination.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&amp;display=swap">
   <link rel="stylesheet" href="static/services.css">
   <link rel="stylesheet" href="static/entry-control.css">
-  <link rel="stylesheet" href="static/aviation.css">
   <link rel="stylesheet" href="static/service-heroes.css">
+  <link rel="stylesheet" href="static/aviation.css">
   <link rel="stylesheet" href="static/section-numbers.css">
 </head>
 <body>
@@ -39,15 +41,12 @@
           <summary>WHO WE SERVE <span class="chevron" aria-hidden="true"></span></summary>
           <div class="menu-panel">
             <div class="panel-heading"><span>Protection shaped around your environment.</span><a href="sectors.html" class="overview-link">Explore All Sectors →</a></div>
-            <div class="sector-grid"><a class="sector-link" href="banking-financial.html"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Banking &amp; Financial</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Security for financial institutions.</span></div></a><a class="sector-link" href="hotel-recreation.html"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Hotel &amp; Recreation</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Protection with a welcoming presence.</span></div></a><a class="sector-link" href="real-estate-domestic.html"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Real Estate &amp; Domestic</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Security for properties and homes.</span></div></a><a class="sector-link" href="education.html"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Education</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Safer learning environments.</span></div></a><a class="sector-link" href="aviation-travel.html"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Aviation &amp; Travel</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Security for aviation and travel operations.</span></div></a><a class="sector-link" href="logistics-warehousing.html"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Logistics &amp; Warehousing</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Protection for goods, sites and movements.</span></div></a></div>
+            <div class="sector-grid"><a class="sector-link" href="sectors.html#banking-financial"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Banking &amp; Financial</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Security for financial institutions.</span></div></a><a class="sector-link" href="sectors.html#hotel-recreation"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Hotel &amp; Recreation</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Protection with a welcoming presence.</span></div></a><a class="sector-link" href="sectors.html#real-estate-domestic"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Real Estate &amp; Domestic</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Security for properties and homes.</span></div></a><a class="sector-link" href="sectors.html#education"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Education</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Safer learning environments.</span></div></a><a class="sector-link" href="sectors.html#aviation-travel"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Aviation &amp; Travel</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Security for aviation and travel operations.</span></div></a><a class="sector-link" href="sectors.html#logistics-warehousing"><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>Logistics &amp; Warehousing</span><img class="hover-arrow" src="static/images/icons/arrow-right.svg" width="18" height="18" alt="" aria-hidden="true"></strong><span>Protection for goods, sites and movements.</span></div></a></div>
           </div>
         </details>
-        <details class="menu">
-          <summary>COMPANY <span class="chevron" aria-hidden="true"></span></summary>
-          <div class="menu-panel company-panel"><ul><li><a href="about_us.html" class="">About Winstar</a></li><li><a href="social-responsibility.html" class="">Social Responsibility</a></li><li><a href="policies-commitments.html" class="">Policies &amp; Commitments</a></li></ul></div>
-        </details>
+        <a href="about_us.html" class="nav-link">ABOUT US</a>
         <a href="contact_us.html" class="nav-link">CONTACT US</a>
-        <a class="quote-button" href="contact_us.html?enquiry=quote">REQUEST FOR QUOTE</a>
+        <a class="quote-button" href="contact_us.html#contact-form">REQUEST FOR QUOTE</a>
 
       </nav>
     </div></div>
@@ -56,40 +55,38 @@
     <section class="guarding-hero entry-hero"><div class="solutions-container">
       <nav class="page-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="services.html">Our Solutions</a><span aria-hidden="true">/</span><span aria-current="page">Aviation Security</span></nav>
       <div class="guarding-hero-grid">
-        <div class="guarding-hero-copy"><h1>Aviation Security</h1><p class="guarding-standfirst">We support airport operations with vigilant personnel and reassuring passenger assistance.</p><a class="solutions-cta" href="contact_us.html?enquiry=quote"><span>Discuss your requirements</span><img src="static/images/icons/chevron-right.svg" width="20" height="20" alt=""></a></div>
+        <div class="guarding-hero-copy"><h1>Aviation Security</h1><p class="guarding-standfirst">Security personnel for airport access points, screening areas and passenger-facing posts.</p></div>
         <figure><img src="static/images/services/aviation-checkpoint-hero-v4.png" width="2172" height="724" alt="Illustration of a passenger placing a suitcase into an airport scanner, with a monitor operator and a supervising guard" fetchpriority="high"></figure>
       </div>
     </div></section>
 
-    <section class="service-section solutions-container aviation-scope">
-      <div><h2>Attentive security.<br>A smoother passenger experience.</h2><p>Winstar deploys security personnel at airport gates, entrances and scanning stations. We combine vigilance with clear, courteous communication, helping protect passengers and terminal staff while supporting everyday operations.</p></div>
-      <div class="aviation-duties">
-        <article><h3>Gates &amp; entry points</h3><p>We staff designated access points, check entry permissions and help prevent unauthorised movement, following the operator’s procedures for each post.</p></article>
-        <article><h3>Screening-area support</h3><p>Our personnel support orderly movement around scanning stations, guide passengers and report concerns to the responsible screening team under the agreed assignment.</p></article>
-        <article><h3>Passenger &amp; staff assistance</h3><p>We provide a calm point of contact, explain directions clearly and refer requests to the appropriate airport team, keeping security duties attentive and professional.</p></article>
-        <article><h3>Vigilance &amp; incident reporting</h3><p>Our teams monitor their assigned areas, recognise unusual activity and escalate concerns through agreed channels, maintaining clear records for follow-up.</p></article>
+    <section class="service-section aviation-scope">
+      <div class="solutions-container aviation-scope-layout">
+        <div class="aviation-scope-intro"><h2>Security that keeps passengers moving</h2><p>Our officers combine attentive security with calm, clear communication.</p></div>
+        <div class="aviation-duties">
+          <article><h3>Gates &amp; entry points</h3><p>We staff designated posts and verify entry permissions under your site procedures.</p></article>
+          <article><h3>Screening-area support</h3><p>We guide passengers through queues and refer concerns to the responsible screening team.</p></article>
+          <article><h3>Terminal assistance</h3><p>We help passengers and staff with directions, monitor assigned areas and report incidents.</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="service-section aviation-coordination"><div class="solutions-container">
-      <div class="delivery-grid"><div class="delivery-heading"><h2>Prepared personnel.<br>Coordinated operations.</h2></div><p>We work with your airport or aviation team to define each post’s duties, operating hours and reporting lines. Our deployment plan aligns personnel with the location, passenger flow and responsibilities of the assignment.</p></div>
-      <div class="delivery-pillars">
-        <article><h3>Assignment preparation</h3><p>We review duties, site procedures and required training and access permissions before deployment, so personnel understand their role and its boundaries.</p></article>
-        <article><h3>Supervision &amp; communication</h3><p>We support personnel with supervision and clear communication, coordinating handovers and referring operational concerns to the designated airport contacts.</p></article>
-        <article><h3>Incident coordination</h3><p>Our teams follow the site’s escalation procedures, assist within their assigned responsibilities and coordinate with authorised responders when further action is needed.</p></article>
+    <section class="service-section aviation-coordination"><div class="solutions-container aviation-coordination-layout">
+      <h2>Working with your aviation team</h2>
+      <div class="aviation-coordination-copy">
+        <p>Before deployment, we agree post duties, shift coverage and reporting lines with your team. On duty, supervisors coordinate handovers and make sure concerns reach the right airport contact.</p>
+        <p class="aviation-scope-note">Operating screening equipment is agreed separately and depends on training and authorisation.</p>
       </div>
     </div></section>
 
     <section class="solutions-faq"><div class="solutions-container solutions-faq-grid">
       <h2>Frequently Asked Questions</h2>
       <div class="solutions-questions">
-        <details><summary>Can you work alongside our existing airport security team?<span aria-hidden="true">+</span></summary><p>Yes. We agree duties, supervision and reporting lines with your team, integrating our personnel into the site’s operating procedures.</p></details>
-        <details><summary>Does the service include operating screening equipment?<span aria-hidden="true">+</span></summary><p>Our core offer includes personnel at scanning stations and access points. Equipment operation is a separate duty that depends on the required training, authorisation and agreed scope.</p></details>
-        <details><summary>Can staffing follow our operating schedule?<span aria-hidden="true">+</span></summary><p>We plan shifts and handovers around your operating hours and expected activity, confirming staffing levels and responsibilities before deployment.</p></details>
-        <details><summary>What information do you need for a proposal?<span aria-hidden="true">+</span></summary><p>Share the facility, areas requiring coverage, operating hours and proposed duties. We then discuss site procedures, personnel requirements and your preferred start date.</p></details>
+        <details><summary>Can staffing follow our operating schedule?<span aria-hidden="true">+</span></summary><p>Yes. We plan staffing around your operating hours and expected passenger activity.</p></details>
+        <details><summary>What information do you need for a proposal?<span aria-hidden="true">+</span></summary><p>Share the facility, posts to cover, operating hours and preferred start date.</p></details>
       </div>
     </div></section>
-    <section class="solutions-enquiry solutions-container"><div><h2>Let’s discuss your aviation operation.</h2><p>Tell us where you need personnel and the duties you need covered.</p></div><a class="solutions-cta" href="contact_us.html?enquiry=quote"><span>Request a quote</span><img src="static/images/icons/chevron-right.svg" width="20" height="20" alt=""></a></section>
+    <section class="solutions-enquiry solutions-container aviation-enquiry"><h2>Plan your aviation security coverage</h2><a class="solutions-cta" href="contact_us.html#contact-form"><span>Request a quote</span><img src="static/images/icons/chevron-right.svg" width="20" height="20" alt=""></a></section>
   </main>
   <footer class="site-footer">
     <div class="footer-main">
@@ -115,8 +112,6 @@
         <ul>
           <li><a href="about_us.html">About Winstar</a></li>
           <li><a href="sectors.html">Who We Serve</a></li>
-          <li><a href="social-responsibility.html">Social Responsibility</a></li>
-          <li><a href="policies-commitments.html">Policies &amp; Commitments</a></li>
           <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
       </nav>

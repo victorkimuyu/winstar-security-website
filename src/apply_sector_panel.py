@@ -1,12 +1,12 @@
 from pathlib import Path
 root = Path(__file__).resolve().parent.parent
 sectors = [
- ('banking-financial.html','Banking &amp; Financial','bank.svg','Professional protection for people, premises and financial operations.'),
- ('hotel-recreation.html','Hotel &amp; Recreation','hospitality.svg','A reassuring security presence that supports the guest experience.'),
- ('real-estate-domestic.html','Real Estate &amp; Domestic','property.svg','Controlled access and protection for properties, residents and visitors.'),
- ('education.html','Education','school.svg','A vigilant, welcoming presence for students, staff and visitors.'),
- ('aviation-travel.html','Aviation &amp; Travel','aeroplane.svg','Professional security for busy terminals and sensitive environments.'),
- ('logistics-warehousing.html','Logistics &amp; Warehousing','warehouse.svg','Protection for goods, facilities and movements through your operation.'),
+ ('sectors.html#banking-financial','Banking &amp; Financial','bank.svg','Professional protection for people, premises and financial operations.'),
+ ('sectors.html#hotel-recreation','Hotel &amp; Recreation','hospitality.svg','A reassuring security presence that supports the guest experience.'),
+ ('sectors.html#real-estate-domestic','Real Estate &amp; Domestic','property.svg','Controlled access and protection for properties, residents and visitors.'),
+ ('sectors.html#education','Education','school.svg','A vigilant, welcoming presence for students, staff and visitors.'),
+ ('sectors.html#aviation-travel','Aviation &amp; Travel','aeroplane.svg','Professional security for busy terminals and sensitive environments.'),
+ ('sectors.html#logistics-warehousing','Logistics &amp; Warehousing','warehouse.svg','Protection for goods, facilities and movements through your operation.'),
 ]
 cards = '\n'.join(f'''        <a class="sector-card" href="{url}">
           <img class="sector-card-icon" src="static/images/icons/{icon}" width="36" height="36" alt="">

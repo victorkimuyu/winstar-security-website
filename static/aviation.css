@@ -1,13 +1,70 @@
-/* Retain the full square composition of the supplied profile illustration. */
-.aviation-page .entry-hero figure{aspect-ratio:1}
-.aviation-page .entry-hero .guarding-hero-grid{grid-template-columns:.85fr 1.3fr}
-.aviation-scope>div:first-child{max-width:720px;margin-bottom:36px}
-.aviation-duties{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 64px}
-.aviation-duties article{border-top:1px solid #dddde5;padding-top:24px}
-.aviation-duties p{font-size:15px;line-height:1.55;margin:0}
-.aviation-coordination{background:#eaf4f7}
-.aviation-coordination .delivery-heading{border:0;padding:0}
-.aviation-coordination .delivery-grid p{margin:0}
-.aviation-coordination .delivery-pillars article{border-color:#c6dbe5}
-.aviation-coordination .delivery-pillars p{line-height:1.55}
-@media(max-width:760px){.aviation-page .entry-hero .guarding-hero-grid,.aviation-duties{grid-template-columns:1fr;gap:28px}}
+.aviation-page .entry-hero .guarding-hero-copy {
+  padding-top: clamp(28px, 4vw, 60px);
+}
+
+.aviation-scope {
+  background: #f4f5f7;
+}
+
+.aviation-scope-layout,
+.aviation-coordination-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
+  gap: clamp(30px, 7vw, 96px);
+}
+
+.aviation-scope-intro {
+  border-left: 4px solid var(--red);
+  padding-left: clamp(18px, 3vw, 34px);
+}
+
+.aviation-scope-intro h2 {
+  max-width: 16ch;
+  margin-bottom: 16px;
+}
+
+.aviation-scope-intro p,
+.aviation-duties p { margin: 0; }
+
+.aviation-duties article + article {
+  border-top: 1px solid #d7d8e1;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.aviation-duties h3 {
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.aviation-coordination {
+  background: var(--slate);
+  color: #fff;
+}
+
+.aviation-coordination h2 { color: var(--sky); }
+.aviation-coordination h2,
+.aviation-coordination p { margin: 0; }
+.aviation-coordination .aviation-scope-note {
+  border-top: 1px solid #ffffff45;
+  margin-top: 20px;
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.aviation-page .solutions-faq { background: #fff; }
+.aviation-enquiry {
+  background: #eaf4f7;
+  border-left: 4px solid var(--red);
+  margin-bottom: clamp(36px, 6vw, 72px);
+  padding: clamp(24px, 4vw, 48px);
+}
+.aviation-enquiry h2 { margin: 0; }
+
+@media (max-width: 760px) {
+  .aviation-scope-layout,
+  .aviation-coordination-layout { grid-template-columns: 1fr; }
+  .aviation-page .entry-hero .guarding-hero-copy { padding-top: 16px; }
+}

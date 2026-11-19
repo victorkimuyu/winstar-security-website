@@ -1,0 +1,31 @@
+@media (prefers-reduced-motion: no-preference) {
+  main:not(.home-main) h1,
+  main :is(.guarding-standfirst, .company-lead, .solutions-intro-grid p, .sectors-intro h1 + p, .contact-intro h1 + p),
+  .thanks-panel h1 + p {
+    animation: hero-text-in 520ms ease-out backwards;
+  }
+  main :is(.guarding-standfirst, .company-lead, .solutions-intro-grid p, .sectors-intro h1 + p, .contact-intro h1 + p),
+  .thanks-panel h1 + p { animation-delay: 160ms; }
+  .solutions-questions summary span { transition: transform 220ms ease; }
+  @supports selector(details::details-content) and (interpolate-size: allow-keywords) {
+    .solutions-questions details { interpolate-size: allow-keywords; }
+    .solutions-questions details::details-content {
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: height 240ms ease, opacity 200ms ease, content-visibility 240ms allow-discrete;
+    }
+    .solutions-questions details[open]::details-content { height: auto; opacity: 1; }
+  }
+  @supports not ((selector(details::details-content)) and (interpolate-size: allow-keywords)) {
+    .solutions-questions details[open] > p { animation: faq-answer-in 220ms ease-out; }
+  }
+}
+@keyframes hero-text-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes faq-answer-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

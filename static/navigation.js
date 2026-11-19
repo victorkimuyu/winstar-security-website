@@ -43,6 +43,12 @@
   document.addEventListener('click', event => {
     if (!event.target.closest('.menu')) closeMenus();
   });
+  nav.addEventListener('click', event => {
+    const link = event.target.closest('a.sector-link');
+    if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const destination = new URL(link.href);
+    if (destination.pathname === window.location.pathname && destination.hash) syncLayout();
+  });
   document.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;
     const openMenu = menus.find(menu => menu.open);

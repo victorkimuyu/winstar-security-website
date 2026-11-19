@@ -1,0 +1,53 @@
+.company-opening {
+  --photo-position:center 34%;
+  background:
+    linear-gradient(to bottom,transparent 22%,rgb(23 128 184 / 55%) 49%,rgb(23 128 184 / 95%) 76%,var(--blue) 94%),
+    linear-gradient(90deg,rgba(25,28,102,.94),rgba(25,28,102,.74) 38%,rgba(25,28,102,.1) 80%),
+    var(--blue) url("images/about-winstar-officer.jpg") var(--photo-position) / cover no-repeat;
+  color:white;
+}
+.company-hero { padding-block:clamp(48px,6vw,86px) clamp(56px,7vw,104px) }
+.company-hero .page-breadcrumb { color:white }
+.company-page .company-hero h1 { color:#fff;font-size:clamp(46px,6vw,84px);font-weight:400;line-height:1.04;letter-spacing:-.04em;margin:0 0 24px }
+.company-hero .company-lead { max-width:32ch;font-size:clamp(20px,2vw,29px);line-height:1.32;margin:0;padding-left:18px;border-left:4px solid var(--red);text-wrap:pretty }
+.company-intro { display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,6vw,88px);padding-block:26px clamp(36px,4vw,56px);border-top:1px solid #ffffff55 }
+.company-intro p { margin:0;line-height:1.6;color:#eef1f5;max-width:61ch }
+.company-story,.company-detail { display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(24px,6vw,90px);padding-block:clamp(44px,6vw,85px) }
+.company-page h2 { font-weight:400;font-size:clamp(28px,3vw,42px);line-height:1.1;margin:0 }
+.company-story p,.company-detail dd { max-width:66ch;margin:0 0 1em;line-height:1.6 }
+.company-story p:last-child,.company-detail dd:last-child { margin-bottom:0 }
+.company-operations { background:#edf4f7 }
+.company-facts {
+  --facts-overlay:rgb(57 55 91 / 95%);
+  background:linear-gradient(var(--facts-overlay),var(--facts-overlay)),
+    var(--slate) url("images/services/response-fleet.jpg") center 84% / cover no-repeat;
+  color:#fff;
+  padding-block:clamp(36px,5vw,62px);
+}
+.company-facts dl { display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:28px 0 0 }
+.company-facts dl div { display:flex;flex-direction:column-reverse;justify-content:flex-end;border-top:1px solid #ffffff50;padding-top:12px }
+.company-facts dd { color:var(--sky);font-size:clamp(38px,4.8vw,66px);line-height:1.1;margin:0 0 6px;font-variant-numeric:lining-nums }
+@media(max-width:720px) { .company-facts dl { grid-template-columns:1fr 1fr } }
+.company-detail { align-items:center }
+.company-detail img { display:block;width:100%;aspect-ratio:1.12;object-fit:cover;clip-path:polygon(0 0,100% 0,100% calc(100% - 36px),calc(100% - 36px) 100%,0 100%) }
+.company-detail dl { margin:25px 0 0 }
+.company-detail dt { font-weight:600;font-size:18px;border-top:1px solid #bcccd4;padding-top:14px;margin-bottom:5px }
+.company-link { display:inline-flex;gap:15px;align-items:center;padding:12px 18px;background:var(--red);color:white;text-decoration:none;font-weight:600 }
+.company-link:hover { background:var(--slate) }
+.company-credentials { padding-block:clamp(36px,5vw,68px);background:#edf4f7 }
+.credentials-title { display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px }
+.company-credentials dl { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:1px;background:#d2dfe5;margin:30px 0 0 }
+.company-credentials dl div { background:white;padding:clamp(20px,2.4vw,34px) }
+.company-credentials dt { font-size:19px;font-weight:600 }
+.company-credentials dd { margin:8px 0 0;line-height:1.55 }
+@media(max-width:720px) {
+  .company-intro { grid-template-columns:1fr;gap:14px }
+  .company-story,.company-detail { grid-template-columns:1fr }
+  .company-detail img { aspect-ratio:1.75 }
+  .company-opening {
+    --photo-position:75% top;
+    background-size:100% max(320px,65vw),100% max(320px,65vw),auto max(320px,65vw);
+    background-repeat:no-repeat;
+  }
+  .company-hero { padding-block:62px }
+}

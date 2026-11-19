@@ -1,11 +1,37 @@
-/* Preserve the profile photograph's technician and boundary detail. */
-.fencing-page .entry-hero figure{aspect-ratio:1.2}
-.fencing-page .entry-hero figure img{object-position:center bottom}
-.fencing-scope>div:first-child{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:32px}
-.fencing-scope>div:first-child p{margin:0}
-.fencing-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
-.fencing-options article{padding:28px;background:#eaf4f7}
-.fencing-options h3{font-size:22px;font-weight:400}
-.fencing-options p{font-size:15px;line-height:1.55;margin:0}
-.fencing-options article:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 2fr;gap:32px;background:none;border-top:1px solid #dddde5;padding:28px 0 0}
-@media(max-width:760px){.fencing-scope>div:first-child,.fencing-options,.fencing-options article:last-child{grid-template-columns:1fr;gap:24px}}
+.fencing-intro {
+  position:relative;
+  isolation:isolate;
+  background:#a5b9df;
+}
+.fencing-photo {
+  position:absolute;inset:0;z-index:-1;width:100%;height:100%;
+  object-fit:cover;object-position:83% top;
+  filter:saturate(1.45) contrast(1.04);
+}
+.fencing-hero {
+  display:grid;
+  align-items:center;
+  min-height:clamp(250px,24vw,320px);
+  padding-block:32px;
+  box-sizing:border-box;
+  color:#142540;
+}
+.fencing-hero .guarding-hero-grid { display:block }
+.fencing-hero .guarding-hero-copy { max-width:44ch }
+.fencing-hero :is(h1,.page-breadcrumb,.guarding-standfirst) { color:inherit }
+.fencing-hero h1 { margin:0 0 14px;font-weight:300;line-height:1.08 }
+.fencing-hero .guarding-standfirst { max-width:34ch;margin:0;line-height:1.45 }
+@media(max-width:760px){
+  .fencing-hero { min-height:230px;padding-block:28px }
+  .fencing-hero .guarding-hero-copy { max-width:54% }
+}
+.fencing-scope { background:rgb(237 244 247 / 25%) }
+.fencing-scope .solutions-container > div:first-child { display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,5vw,64px) }
+.fencing-scope .solutions-container > div:first-child :is(h2,p) { margin:0 }
+.fencing-options { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#d2dfe5;margin-top:30px }
+.fencing-options article { background:white;padding:clamp(20px,2.4vw,34px) }
+.fencing-options h3 { font-size:19px;font-weight:600;margin:0 }
+.fencing-options p { margin:8px 0 0;line-height:1.55 }
+@media(max-width:760px){
+  .fencing-scope .solutions-container > div:first-child,.fencing-options { grid-template-columns:1fr }
+}

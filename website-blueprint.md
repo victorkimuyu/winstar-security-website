@@ -27,7 +27,7 @@ Use 2001 as the establishment/professional operations date. Preferred wording: "
 
 ## Page map and navigation
 
-Main navigation: **HOME | OUR SOLUTIONS | WHO WE SERVE | COMPANY | CONTACT US**.
+Main navigation: **HOME | OUR SOLUTIONS | WHO WE SERVE | ABOUT US | CONTACT US**.
 
 Place **REQUEST FOR QUOTE** at the far right as the prominent CTA.
 
@@ -35,20 +35,20 @@ Agreed two-tier header: upper white row with logo, tagline "For all your corpora
 
 - Services: mega menu.
 - Sectors: mega menu, retained as a top-level item.
-- Company: dropdown; detailed layout to be determined.
+- About Us links directly to the company profile.
 - Careers: excluded from current scope.
 
 Planned pages:
 - Home.
 - Services overview and ten individual service pages, allocated below.
-- Sectors overview and six individual sector pages; depth to reflect available substantive content.
+- One Who We Serve page with six linked sector sections.
 - Company/About Winstar.
 - Social Responsibility, pending actual initiative content and evidence.
 - Policies & Commitments.
 - Contact Us.
 - Data Protection Policy, Privacy Notice and Terms of Use, linked in the footer.
 
-Company navigation should include About Winstar, Social Responsibility and Policies & Commitments, subject to content readiness.
+The footer includes About Winstar, Social Responsibility and Policies & Commitments.
 
 ### Service scope
 
@@ -67,8 +67,7 @@ Control-room support is explained within relevant services and capacity content.
 - Home: `index.html`.
 - Services overview: `services.html`.
 - Individual services: `manned-guarding.html`, `canine-security.html`, `event-security.html`, `vip-cargo-escorts.html`, `cctv-surveillance.html`, `biometric-card-access.html`, `security-alarm-systems.html`, `access-control.html`, `electric-fencing.html`, `aviation-security.html`.
-- Sectors overview: `sectors.html`.
-- Individual sectors: `banking-financial.html`, `hotel-recreation.html`, `real-estate-domestic.html`, `education.html`, `aviation-travel.html`, `logistics-warehousing.html`.
+- Who We Serve: `sectors.html` with named anchors for all six sectors. The existing mega menu links to those sections.
 - Company: `about_us.html`, `social-responsibility.html`, `policies-commitments.html`.
 - Contact: `contact_us.html`; the quote CTA will use the contact enquiry route, with details to be agreed.
 - Footer policies: `data-protection-policy.html`, `privacy-notice.html`, `terms-of-use.html`.
@@ -88,7 +87,7 @@ Service pages explain solutions and delivery. Sector pages explain the environme
 
 ## Agreed homepage structure
 
-1. **Navigation:** shared site navigation with Services and Sectors mega menus, Company dropdown and far-right Request for Quote CTA.
+1. **Navigation:** shared site navigation with Services and Sectors mega menus, a direct About Us link and far-right Request for Quote CTA.
 2. **Three-slide jumbotron/hero:** Main Introduction; Capacity; Differentiator.
 3. **Services overview:** a large heading on the left with a short overview paragraph and Services CTA on the right; no image for now. Do not use a full service list or service-card catalogue here.
 4. **Experience & Sector Expertise:** experience since 2001, breadth of sector work and relevance to different customer environments, with a CTA to Sectors. This is the agreed replacement for "Experience & Service Diversity."

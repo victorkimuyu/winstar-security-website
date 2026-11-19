@@ -33,7 +33,8 @@ def service_link(file, label, current):
     return f'<a class="service-link" href="{file}"{active}>{arrow()}<span>{escape(label)}</span></a>'
 
 def header(current):
-    columns = ''.join('<section class="menu-group"><div class="solution-image-placeholder" aria-hidden="true"></div><h2>'+escape(title)+'</h2><ul>'+''.join('<li>'+service_link(file,label,current)+'</li>' for file,label in items)+'</ul></section>' for title,items in groups.items())
+    separator = '<div class="menu-column-separator" aria-hidden="true"></div>'
+    columns = separator.join('<section class="menu-group"><div class="solution-image-placeholder" aria-hidden="true"></div><h2>'+escape(title)+'</h2><ul>'+''.join('<li>'+service_link(file,label,current)+'</li>' for file,label in items)+'</ul></section>' for title,items in groups.items())
     sector_links = ''.join(f'<a class="sector-link" href="{file}"'+(' aria-current="page"' if file==current else '')+f'><span class="sector-icon-placeholder" aria-hidden="true"></span><div class="sector-copy"><strong><span>{escape(title)}</span>{arrow()}</strong><span>{escape(description)}</span></div></a>' for file,title,description in sectors)
     return f'''  <header class="site-header">
 
@@ -45,7 +46,7 @@ def header(current):
         <details class="menu{' is-current' if current in service_files else ''}">
           <summary>OUR SOLUTIONS <span class="chevron" aria-hidden="true"></span></summary>
           <div class="menu-panel">
-            <div class="panel-heading"><span>Security solutions for your people, property and operations.</span>{link('services.html','Explore All Services →',current,'overview-link')}</div>
+            <div class="panel-heading"><span>Security solutions for your property and operations.</span>{link('services.html','Explore All Services →',current,'overview-link')}</div>
             <div class="menu-columns">{columns}</div>
           </div>
         </details>
@@ -58,7 +59,6 @@ def header(current):
         </details>
         {link('about_us.html','ABOUT US',current,'nav-link')}
         {link('contact_us.html','CONTACT US',current,'nav-link')}
-        <a class="quote-button" href="contact_us.html#contact-form">REQUEST FOR QUOTE</a>
 
       </nav>
     </div></div>

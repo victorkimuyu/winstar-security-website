@@ -65,7 +65,8 @@
 .brand-header .brand img{width:110px}
 @media(max-width:700px){.brand-header .brand img{width:95px}}
 
-.solution-image-placeholder{height:120px;width:100%;max-width:320px;border-radius:8px;overflow:hidden;background:#e4e7ed;margin-bottom:20px}.menu-group{min-width:0}
+.solution-image-placeholder{height:120px;width:100%;border-radius:8px;overflow:hidden;background:#e4e7ed;margin-bottom:20px}
+.menu-columns > .menu-group { width:85%;min-width:0; }
 /* Sector icons sit beside both title and description. */
 .sector-link{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;align-items:center}
 .sector-icon-placeholder {
@@ -232,13 +233,22 @@
 .site-nav > .menu > summary:is(:hover,:focus-visible),
 .site-nav > .menu[open] > summary { background: var(--menu-tint);color: var(--navy); }
 .menu-group .solution-image-placeholder { background-size:cover;background-position:center; }
-.menu-group:nth-child(1) .solution-image-placeholder { background-image:url("images/slider/winstar-guarding-anonymous.webp"); }
-.menu-group:nth-child(2) .solution-image-placeholder { background-image:url("images/services/cctv-technician-remix-anonymous.webp"); }
-.menu-group:nth-child(3) .solution-image-placeholder { background-image:url("images/services/access-control-hero.png"); }
+.menu-group:nth-of-type(1) .solution-image-placeholder { background-image:url("images/slider/winstar-guarding-anonymous.webp"); }
+.menu-group:nth-of-type(2) .solution-image-placeholder { background-image:url("images/services/cctv-technician-remix-anonymous.webp"); }
+.menu-group:nth-of-type(3) .solution-image-placeholder { background-image:url("images/services/access-control-hero.png"); }
+.menu-column-separator { display:none; }
 @media(min-width:1051px) {
-  .menu-columns .menu-group { position:relative; }
-  .menu-columns .menu-group + .menu-group::before {
-    content:"";position:absolute;top:0;bottom:0;left:-18px;width:1px;background:#dce4e8;
-  }
+  .menu-columns { grid-template-columns:minmax(0,1fr) 1px minmax(0,1fr) 1px minmax(0,1fr);column-gap:18px; }
+  .menu-columns > .menu-group { justify-self:center; }
+  .menu-column-separator { display:block;background:#dce4e8; }
 }
 @media(max-width:1050px) { .site-nav { --menu-gutter:5vw; } }
+
+.site-nav > .nav-link[href="contact_us.html"] {
+  background:var(--red);
+  color:#fff;
+}
+.site-nav > .nav-link[href="contact_us.html"]:is(:hover,:focus-visible) {
+  background:#bf1420;
+  color:#fff;
+}

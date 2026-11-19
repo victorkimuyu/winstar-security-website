@@ -47,11 +47,6 @@ footer = f'''  <footer class="site-footer">
     </div>
     <div class="footer-bottom">
       <p>&copy; {date.today().year} Winstar Security Solutions. All rights reserved.</p>
-      <nav aria-label="Legal information">
-        <a href="data-protection-policy.html">Data Protection Policy</a>
-        <a href="privacy-notice.html">Privacy Notice</a>
-        <a href="terms-of-use.html">Terms of Use</a>
-      </nav>
     </div>
   </footer>'''
 

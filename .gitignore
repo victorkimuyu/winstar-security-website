@@ -9,17 +9,25 @@ __pycache__/
 .env.*
 !.env.example
 
-# Generated previews and extracted page images
+# Working materials, proposals and generated previews
 tmp/
-review/policy-pages/
-review/profile-pages/
-review/notebook-pages/
+/sources/
+/Photo Gallery/
+/review/*
+!/review/verify_site.py
+/*Proposal*.pdf
+/*Proposal*.docx
+/inspiration websites.txt
+/static/images/Client Logos/SOA USD at 15TH.pdf
+/static/images/Client Logos/Hikvision-DS-2CD2T55FWD-I5.webp
+/static/images/Client Logos/bullet.webp
+/static/images/Client Logos/dimensions.txt
+/static/images/services/ai-surveillance-background.webp
+/static/images/services/team-briefing-complexions.webp
+/static/images/services/team-briefing-varied.webp
 
 # Editor and operating-system files
 .vscode/
 .idea/
 Thumbs.db
 .DS_Store
-
-# Local emergency recovery archives
-review/homepage-recovery-*/
